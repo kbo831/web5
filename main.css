@@ -1,0 +1,25 @@
+
+/*page1*/
+.con { width: 100vw; height:947px; }
+.vs { width:100%; height: 100%; }
+.vs_box { width: 400%; height: 100%;  }
+.vs_box li { width: 25%; height:100%;  float:left; position:relative;}
+.vs_box li .a01 { display: block; width: 1920px; height: 947px; background-repeat: no-repeat; background-position: center center; background-size: cover; color:#fff; }
+
+.vs_box li.item01  a { background-image: url(./main/part_main/vs01.jpg);}
+.vs_box li.item02  a { background-image: url(./main/part_main/vs02.jpg);}
+.vs_box li.item03  a { background-image: url(./main/part_main/vs03.jpg);}
+.vs_box li.item04  a { background-image: url(./main/part_main/vs04.jpg);}
+
+.vs_box li .txt_box { position: absolute; text-align: center; width: 1200px; height: 300px; left: 20%; top: 30%; color:#fff;}
+
+.vs_box li .txt_box h2 { font-size: 25px; font-weight: 500;}
+.vs_box li .txt_box h1 { font-size: 40px; padding: 20px;}
+.vs_box li .txt_box p { font-size: 18px; padding-top: 150px; }
+.vs_box li.item .txt_box a.go { clear:both; display: block;  width: 150px; height: 60px; text-align: center; line-height: 60px; color: #fff; margin: 0px auto; margin-top: 30px; background-color:transparent;   }
+
+/*page2*/
+
+/*page3*/
+
+/*page4*/

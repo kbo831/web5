@@ -11,8 +11,10 @@
     <script src="./js/device.js"></script>
     <!--fontset 설정하기-->
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./main.css">
+    
     <style>
     </style>
     <script>
@@ -339,8 +341,8 @@
                 <div class="up">
                     <div class="col_box">
                         <ul>
-                            <li class="lst1">
-                                <span>식품 & 식품서비스</span>
+                            <li class="lst">
+                                <span >식품 & 식품서비스</span>
                                 <ul class="ck_lst">
                                     <li><a href="">CJ제일제당</a></li>
                                     <li><a href="">CJ푸드빌</a></li>
@@ -348,14 +350,14 @@
                                 </ul>
 
                             </li>
-                            <li class="lst2">
+                            <li class="lst">
                                 <span>생명공학</span>
                                 <ul class="ck_lst">
                                     <li><a href="">CJ제일제당 BIO사업부문</a></li>
                                     <li><a href="">CJ FEED & Care</a></li>
                                 </ul>
                             </li>
-                            <li class="lst3">
+                            <li class="lst">
                                 <span>물류 & 신유통</span>
                                 <ul class="ck_lst">
                                     <li><a href="">CJ대한통운</a></li>
@@ -365,7 +367,7 @@
                                     <li><a href="">CJENM 커머스부문</a></li>
                                 </ul>
                             </li>
-                            <li class="lst4">
+                            <li class="lst">
                                 <span>엔터테인먼트 & 미디어</span>
                                 <ul class="ck_lst">
                                     <li><a href="">CJ ENM 엔터테인먼트부문</a></li>
@@ -407,16 +409,19 @@
         </footer>
         <div class="to_top">
             <img src="./main/img_scroll_arrow.png" alt="위로화살표">
-            <span class="txt">top</span>
+          <!--  <span class="txt">top</span>-->
         </div>
         <!--ul 앞: top  뒤: end -->
         <div class="mt_bar">
             <ul class="bar_fr">
-                <li><button data_target="#pg1">1</button></li>
-                <li><button data_target="#pg2">2</button></li>
-                <li><button data_target="#pg3">3</button></li>
-                <li><button data_target="#pg4">4</button></li>
+                <li><button data_target="header">top</button></li>
+                <li><button data_target="pg1">1</button></li>
+                <li><button data_target="pg2">2</button></li>
+                <li><button data_target="pg3">3</button></li>
+                <li><button data_target="pg4">4</button></li>
+                <li><button data_target="footer">end</button></li>
             </ul>
+            <div class="cur_page">현재위치표시</div>
         </div>
     </div>
 </body>

@@ -104,6 +104,7 @@
 #pg1 .lst_box li:hover .bg { display:block; }
 
 #pg1 .lst_box li.item1:hover ~ li.item11 { background-image: url("./main/page1/big_bg_01_bibigo2.png"); }
+#pg1 .lst_box li.item2:hover ~ li.item11 { background-image: url("./main/page1/big_bg_02_tvn3.png"); }
 
 /*버튼*/
 

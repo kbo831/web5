@@ -103,7 +103,7 @@
 #pg1 .lst_box li:hover .txt { opacity:0; visibility:hidden; }
 #pg1 .lst_box li:hover .bg { display:block; }
 
-#pg1 .lst_box li.item1:hover ~ #pg1 .lst_box li.item11 { background-image: url();}
+#pg1 .lst_box li.item1:hover ~ li.item11 { background-image: url("./main/page1/big_bg_01_bibigo2.png"); }
 
 /*버튼*/
 

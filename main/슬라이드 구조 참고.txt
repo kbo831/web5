@@ -1,0 +1,67 @@
+slider.js 연결 시 
+        //비주얼 배너 부분 연결    
+        $(document).ready(function(){
+           $(".vs .ban_box").sliding({spd:500, intv:4500, chd:"li", numfr:".btn_box", numbox:".btn_box li"}); 
+        });    
+  
+=========================================
+<figure class="vs clr">
+    <ul class="img_box">
+        <li class="item"><a href=""><img src="https://placehold.it/1200x300/999/fff" alt=""></a></li>
+        <li class="item"><a href=""><img src="https://placehold.it/1200x300/369/fff" alt=""></a></li>
+        <li class="item"><a href=""><img src="https://placehold.it/1200x300/936/fff" alt=""></a></li>
+    </ul>
+    <ul class="btn_box">
+        <li><button class="prev">∧</button></li>
+        <li><button class="next">∨</button></li>
+    </ul>
+</figure>
+
+------------------태그구조------------------------------<상하 슬라이드 _ + 버튼 스크립트>
+  <script>
+        $(document).ready(function(){
+       function ani1() {
+           $(".img_box").not(":animated").animate({"margin-top":"-300px"}, 600, function(){
+               $(".img_box li").eq(0).appendTo($(".img_box"));
+               $(".img_box").css("margin-top","0px");
+           });
+       }
+       var intv = setInterval(function(){ ani1(); }, 2950); 
+       function ani2() {
+           $(".img_box li").eq(2).prependTo($(".img_box"));
+           $(".img_box").css("margin-top","-300px");
+           $(".img_box").not(":animated").animate({"margin-top":"0px"}, 600);
+       } 
+        
+        $("button.prev").click(function(){
+            clearInterval(intv);
+            ani2();
+            intv = setInterval(function(){ ani1(); }, 2950);
+        });
+        $("button.next").click(function(){
+            clearInterval(intv);
+            ani1();
+            intv = setInterval(function(){ ani1(); }, 2950);
+        });
+    });
+    </script>
+
+
+
+#pg1 .lst_box li.item1 { top:130px; left: 0 }
+#pg1 .lst_box li.item2, #pg1 .lst_box li.item2 .txt {  top:130px; left: 620px;}
+#pg1 .lst_box li.item3, #pg1 .lst_box li.item3 .txt { top:130px; left: 1240px;}
+#pg1 .lst_box li.item4, #pg1 .lst_box li.item4 .txt
+{top:310px; left: 0  }
+#pg1 .lst_box li.item5, #pg1 .lst_box li.item5 .txt  { top:310px; left: 620px; }
+#pg1 .lst_box li.item6, #pg1 .lst_box li.item6 .txt
+{ top:310px; left: 1240px; }
+#pg1 .lst_box li.item7, #pg1 .lst_box li.item7 .txt 
+{ top:490px; left: 0  }
+#pg1 .lst_box li.item8, #pg1 .lst_box li.item8 .txt 
+{ top:490px; left: 620px; }
+#pg1 .lst_box li.item9, #pg1 .lst_box li.item9 .txt
+{ top:490px; left: 1240px; }
+#pg1 .lst_box li.item10 { width: 100%; height: 180px; top:670px; left: 0; }
+#pg1 .lst_box li.item11 { width: 100vw; height:100vh; position: absolute; top: 0; left: 0; border:0; background-image: url("./main/page1/pg1big_s.jpg");z-index:4; }
+

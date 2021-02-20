@@ -20,8 +20,8 @@
 /*조직도 내용*/
 .info_box01 { width: 1200px; margin: 0 auto;}
 .info_box01 .info { width: 300px; height:80px;  float:left; }
-.info_box01 .info_lst01 { width: 250px; height: 74px; border: 2px solid #eee; box-sizing: border-box; }
-.info_box01 .info_lst01 > span { display: block; width: 230px; height: 58px ; border:2px solid  transparent; text-align: center; line-height: 58px; font-size:20px; box-sizing: border-box; margin: 6px auto; color: #fff; box-shadow: 4px 4px 4px -3px  #000;}
+.info_box01 .info_lst01 { width: 250px; height: 74px; border: 2px solid transparent; box-sizing: border-box; }
+.info_box01 .info_lst01 > span { display: block; width: 230px; height: 58px ; border:2px solid  transparent; text-align: center; line-height: 58px; font-size:20px; box-sizing: border-box; margin: 6px auto; color: #ececec; box-shadow: 4px 4px 4px -3px  #000; font-weight: 600; }
 
 /* 리스트 분야별 컬러
 .info_box01 .info01 .info_lst01 { background-color: }
@@ -36,4 +36,17 @@
 .info_box01 .info04 .info_lst01 span{ background-color: #ff9700;}
 
 /* 계열사 리스트*/
+.info_box01 .info .main {width: 250px; padding-top: 40px;}
+.main .main_lst { width: 250px; margin: 30px auto; }
+.main .main_lst > a { display:block; width: 230px; height:60px; border: 1px solid transparent; color:#eee; font-size:17px; text-align: center; line-height: 60px; margin: 0 10px; box-sizing: border-box; box-shadow: 4px 4px 4px -3px  #000; font-weight: 600;}
+
+.main .main_lst .mlst01 { background-color: rgba(238,21,30,0.8);}
+.main .main_lst .mlst02 { background-color: rgba(0,110,205,0.8);}
+.main .main_lst .mlst03 { background-color: rgba(255,151,0,0.8);}
+
+.main .main_lst .sub { width: 230px; }
+.main .main_lst .sub li { width: 200px; height:40px; line-height: 40px; text-align: left; margin-left: 50px; padding: 20px 0; border-left-style: solid; border-color: #eee;}
+.main .main_lst .sub li:first-child {margin-top: 3px;} 
+.main .main_lst .sub li a { display: block; width: 180px; height: 40px; margin-left: 10px;}
+
 

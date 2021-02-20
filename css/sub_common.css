@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.wrap { width: 100vw; }
+
+
+/*header*/
+
+.hd { width: 100vw;  height: 130px; border-bottom: 1px solid #eeeeee; position: relative;  position: fixed; left: 0; top: 0; z-index: 95; transition:0.6s; background-color: rgba(255,255,255,0,5);}
+header:hover .m_lst ul.sub { display: block; height: 430px; visibility:visible; opacity: 1; }
+.logo_top { display: block; background-image: url("../main/cj_logo_b.png"); width: 160px; height: 90px; background-position: center center; background-repeat: no-repeat; text-indent: -9999px; float: left; margin-left: 100px; padding-top: 40px; }
+/*gnb*/
+.gnb { width: 100%; height: 130px; background-color:rgba(255,255,255,0.8) ; transition:0.5s; }
+.gnb:hover { height: 560px;  }
+.gnb_wrap { width: 1200px; height:130px;  margin: 0 auto; position:relative; padding-top: 20px; }
+
+.gnb_wrap .g_ul { width:1100px; height: 0px; margin: 0 auto; margin-left: -15px; transition:0.6s; height:130px;  }
+
+.gnb_wrap .m_lst  { float: left; width: 145px; height: 60px; margin-top:40px; margin-left: 5px; }
+.gnb_wrap .m_lst:hover a.m_a { color:#006ecd; }
+.gnb_wrap .m_lst a { display: block; float: left; width: 150px; font-size: 20px; color: #000; text-align: center; font-weight: 700; }
+
+.m_lst ul.sub { position: absolute; top: 130px;  transition :0.5s; height: 0px;    visibility: hidden; opacity: 0;}
+.m_lst .sub:after { content:""; display:block; clear: both; }
+.m_lst .sub li { width: 150px; height: 50px; }
+.m_lst .sub li:first-child { padding-top: 30px;}
+.gnb_wrap .sub li a:hover  { color:#006ecd; text-decoration: underline; font-weight: 600;}
+.m_lst .sub li a { display: block; width: 143px; height: 50px;  font-size: 18px; color: black; text-align: center; font-weight: 500;}
+
+
+
+
+
+
+
+

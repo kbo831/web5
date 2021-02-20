@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.con { width: 100vw; height: 100%; }
+
+.ba_box { width: 100%; margin-top: 130px; overflow: hidden; position:relative; }
+.ba_box img { display: block; width: 100%; height:400px;  }
+.ba_box p { position:absolute; color:#fff; font-size: 60px; top: 50%; left:50%; margin-left: -120px; margin-top: -40px; }
+
+/*조직도*/
+.group_map { width: 1620px; margin: 0 auto;}
+.info_box  { width:802px; height: 450px; margin: 0 auto;  padding-top: 70px; }
+.info_box li.info_lst { width: 800px; height: 100%; }
+.info_lst .info_txt{ display: block; width: 600px; height: 100%; margin: 0 auto;}
+.info_lst .info_txt .b_bg {width: 400px; height: 400px; border-radius: 250px; background-color: #006ecd; float:left;}
+
+.info_lst .info_txt img { display: block; width: 350px ; height: 350px; border: 3px solid transform; border-radius: 230px;  box-sizing: border-box; margin-top: 23px; margin-left: 25px; box-shadow: -6px 3px 3px 0 #000; }
+
+.info_lst .info_txt span{ display: block ; width: 200px ; height: 400px; line-height: 400px; font-size: 80px; text-align:center; color:black; font-weight: 700; float:left;}
+
+/*조직도 내용*/
+

@@ -25,6 +25,7 @@
             })
 
         });
+
     </script>
 
 </head>
@@ -197,7 +198,8 @@
             <!--after로 박스만들기-->
             <div id="pg1" class="pg1 clrfx">
                 <section class="tit">
-                    <h2 class="clrfx">CJ Best Brand<button class="spin">회전</button></h2>
+                    <h2 class="tit_h clrfx"><span>CJ Best Brand</span></h2>
+                    <button class="spin">회전</button>
                     <ul class="lst_box clrfx">
                         <li class="item1 li1">
                             <a href="" class="bg">
@@ -260,10 +262,33 @@
                             큰 배경
                         </li>
                     </ul>
-                    <div class="branch_box">
-                        <img src="" alt="계열사 분포도">
+                    <div class="ceo_box clrfx">
+                        <img src="./main/page1/bg_ceo_w_small2.png" alt="회사경영진">
+                        <div class="ceo_txt">
+                            <div class="l_box">
+                                <h2>사랑받는 글로벌 생활문화기업<br>World Best CJ를 향한<br>
+                                    도전은 계속됩니다.
+                                    <p>CJ그룹 이재현 회장</p>
+                                </h2>
+                            </div>
+                            <div class="r_box">
+                                <h2>기본과 원칙에 충시하며<br>World Best CJ를 향해 나아갑니다.
+                                <p>CJ그룹대표이사 손경식회장</p>
+                                </h2>
+                            </div>
+                        </div>
                         <button class="cl_btn">close</button>
                     </div>
+                    <script>
+                        $(document).ready(function() {
+                            $(".tit .spin").click(function() {
+                                $(".tit .spin").toggleClass("on");
+                                $(".ceo_box").css("display", "blcok");
+
+                            })
+                        });
+
+                    </script>
                 </section>
 
             </div>
@@ -438,4 +463,6 @@
             <div class="cur_page">현재위치표시</div>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>

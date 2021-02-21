@@ -20,12 +20,10 @@
     <script>
         $(document).ready(function() {
             $(".r_box .op_btn ").click(function() {
-                $("header").toggleClass("on");
-                $(".op_btn").toggleClass("on");
-            })
-
+                $("header").toggleClass("active");
+            });
+            
         });
-
     </script>
 
 </head>
@@ -34,7 +32,6 @@
     <div class="wrap">
         <header class="hd clrfx">
             <a href="index.html" class="logo_top">cj.logo(흰색)</a>
-
             <nav class="gnb clrfx">
                 <div class="gnb_wrap clrfx">
                     <ul class="g_ul">
@@ -117,6 +114,7 @@
                     </ul>
                 </div>
             </nav>
+      
         </header>
         <mian class="con clrfx">
             <figure class="vs clrfx">
@@ -191,6 +189,9 @@
                         </li>
                     </ul>
                 </div>
+                <script>
+                
+                </script>
                 <!--   <div class="m_btn">
                     <a href="" class="all">계열사 전체보기</a>
                 </div>-->
@@ -277,15 +278,18 @@
                                 </h2>
                             </div>
                         </div>
-                        <button class="cl_btn">close</button>
                     </div>
+                    <button class="cl_btn">close</button>
                     <script>
                         $(document).ready(function() {
                             $(".tit .spin").click(function() {
-                                $(".tit .spin").toggleClass("on");
+                                $(this).toggleClass("on");
                                 $(".ceo_box").css("display", "blcok");
-
-                            })
+                                
+                            });
+                            $(".cl_btn").click(function(){
+                               $(".tit .spin").removeClass("on");                               
+                            });
                         });
 
                     </script>

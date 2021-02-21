@@ -8,19 +8,23 @@ clrfx:after { content:""; display: block; clear:both;}
 .hd { width: 100vw;  height: 130px; background-color: transparent;  border-bottom: 1px solid #6b6a65; position: relative;  position: fixed; left: 0; top: 0; z-index: 95; transition:0.6s;}
 .logo_top { display: block; background-image: url("../main/cj_logo_W.png"); width: 160px; height: 90px; background-position: center center; background-repeat: no-repeat; text-indent: -9999px; float: left; margin-left: 100px; padding-top: 40px; }
 
-header.on {background-color: rgba(255,255,255,1); height:620px; }
-header.on .logo_top { background-image: url("../main/cj_logo_b.png"); }
-header.on .gnb { border-bottom: 1px solid #eee;}
-header.on .gnb_wrap {  opacity:1; visibility: visible;  height: 620px;   }
-header.on .gnb_wrap .m_lst a { color:#000; }
-header.on .m_lst ul.sub { position: absolute; top: 150px; opacity: 1px; visibility: visible; }
-header.on .gnb_wrap .g_ul:before,header.on .gnb_wrap .g_ul:after { display: none;}
-header.on .gnb .r_box .r_lst li a , header.on .gnb .r_box .r_lst li.op_btn { border:1px solid #ef151e; color:#000;}
-header.on .r_box li.op_btn .lst i {background-color: #000;}
+header.on { height: 130px; background-color: #fff;}
 
-header.on .gnb .r_box .r_lst li a.active { display: block; float: left; border: 1px solid #ef151e; text-align: center; color:#fff; background-color:#ef151e;  }
+header.active { background-color: rgba(255,255,255,1); height:620px; }
+header.active .logo_top { background-image: url("../main/cj_logo_b.png"); }
+header.active .gnb { border-bottom: 1px solid #eee;}
+header.active .gnb_wrap {  opacity:1; visibility: visible;  height: 620px;   }
+header.active .gnb_wrap .m_lst a { color:#000; }
+header.active .m_lst ul.sub { position: absolute; top: 150px; opacity: 1px; visibility: visible; }
+header.active .gnb_wrap .g_ul:before,header.on .gnb_wrap .g_ul:after { display: none;}
+header.active .gnb .r_box .r_lst li a , header.active .gnb .r_box .r_lst li.op_btn { border:1px solid #ef151e; color:#000;}
+header.active .r_box li.op_btn .lst i {background-color: #000;}
 
-/*gnb on 일때 로고 검정/ 오른쪽 리스트 색 반전 / 버튼 바뀜 gnb 크기도 커짐.*/
+header.active .gnb .r_box .r_lst li a.active { display: block; float: left; border: 1px solid #ef151e; text-align: center; color:#fff; background-color:#ef151e;  }
+
+header.active .gnb .r_box .op_btn .lst .i1 { top:16px; transform:rotate(-135deg);}
+header.active .gnb .r_box .op_btn .lst .i2 { display:none;}
+header.active .gnb .r_box .op_btn .lst .i3 { top:16px; transform:rotate(135deg);}
 
 /*gnb*/
 .gnb { width: 100%; height: 130px;  background-color: transparent; }
@@ -58,7 +62,7 @@ left:-410px; }
 .gnb .r_box .r_lst .sin {width:80px; height: 30px; line-height: 30px; margin-left: 5px; }
 
 .gnb .r_box li.op_btn { width: 32px; height:32px; position:relative; }
-.gnb .r_box li.op_btn .lst { border: 1px solid #ffffff;  width: 32px; height:32px; background-color: transparent;}
+.gnb .r_box li.op_btn .lst { border: 1px solid transparent; width: 32px; height:32px; background-color: transparent;}
 .gnb .r_box li.op_btn .lst,.gnb .r_box li.op_btn .lst i { display: block;}
 .r_box li.op_btn .lst i { width: 26px; height: 2px; background-color: #ffffff; position: absolute; left: 3px; text-indent: -9999px; transition:0.5s;}
 
@@ -66,9 +70,7 @@ left:-410px; }
 .gnb .r_box li.op_btn .lst .i2 { top:16px;}
 .gnb .r_box li.op_btn .lst .i3 { top:24px;}
 
-.gnb .r_box .op_btn.on .lst .i1 { top:16px; transform:rotate(-135deg);}
-.gnb .r_box .op_btn.on .lst .i2 { display:none;}
-.gnb .r_box .op_btn.on .lst .i3 { top:16px; transform:rotate(135deg);}
+
 
 
 
@@ -116,7 +118,7 @@ left:-410px; }
 
 /*page1*/
 #pg1 { width: 1912px; height: 100vh; position: relative; overflow: hidden;}
-#pg1 .tit { width: 100%; background-color:rgba(0,0,0,0.7);}
+#pg1 .tit { width: 100%; background-color:rgba(0,0,0,0.7); position:relative;}
 #pg1 .tit .tit_h { width: 100%; height:130px;  position:absolute; left: 0; top: 0;  background-color:rgba(0,0,0,0.7); color:#fff; text-shadow: 1px 1px 1px #000; z-index: 78;}
 #pg1 .tit .tit_h > span { display: block; height:130px; width: 500px; line-height: 130px; font-size: 50px; text-align: center; margin-left: 650px;}
 
@@ -209,9 +211,9 @@ left:-410px; }
 #pg1 .tit .spin.on { background-image: url(../main/spin_btn_t.png);}
 
 
-.ceo_box .cl_btn { display: block; width: 100%; height: 60px; background-color: rgba(0,0,0,0.5); position:absolute; bottom: 0; left: 0; color:#eee; z-index: 71; cursor: pointer; font-size: 20px; color:#fff; border:0;}
+#pg1 .cl_btn { display: block; width: 100%; height: 60px; background-color: rgba(0,0,0,0.5); position:absolute; bottom: 0; left: 0; color:#eee; z-index: 71; cursor: pointer; font-size: 20px; color:#fff; border:0;}
 
-
+.ceo_box .cl_btn.on ~ .ceo_box { display: none;}
 /*pa1 버튼 작동스크립트 스타일*/
 
 /*page2*/

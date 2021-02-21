@@ -6,12 +6,12 @@ clrfx:after { content:""; display: block; clear:both;}
 /*header*/
 
 .hd { width: 100vw;  height: 130px; background-color: transparent;  border-bottom: 1px solid #6b6a65; position: relative;  position: fixed; left: 0; top: 0; z-index: 95; transition:0.6s;}
-.logo_top { display: block; background-image: url("../main/cj_logo_W.png"); width: 160px; height: 90px; background-position: center center; background-repeat: no-repeat; text-indent: -9999px; float: left; margin-left: 100px; padding-top: 40px; }
+.logo_top { display: block; background-image: url("../main/logo/cj_logo_W.png"); width: 160px; height: 90px; background-position: center center; background-repeat: no-repeat; text-indent: -9999px; float: left; margin-left: 100px; padding-top: 40px; }
 
 header.on { height: 130px; background-color: #fff;}
 
 header.active { background-color: rgba(255,255,255,1); height:620px; }
-header.active .logo_top { background-image: url("../main/cj_logo_b.png"); }
+header.active .logo_top { background-image: url("../main/logo/cj_logo_b.png"); }
 header.active .gnb { border-bottom: 1px solid #eee;}
 header.active .gnb_wrap {  opacity:1; visibility: visible;  height: 620px;   }
 header.active .gnb_wrap .m_lst a { color:#000; }
@@ -76,9 +76,9 @@ left:-410px; }
 
 /*vs*/
 .con { width: 100vw; height:947px; }
-.vs { width:100%; height: 947px; }
-.vs_box { width: 400%; height: 100%;  }
-.vs_box li { width: 25%; height:100%;  float:left; position:relative;}
+.vs { width:100%; height: 947px;  }
+.vs_box { width: 7680px; height: 100%;  }
+.vs_box li { width: 1920px; height:100%;  float:left; position:relative;}
 
 .vs_box li.item  .vs { display: block; width: 1920px; height: 947px; background-repeat: no-repeat; background-position: center center; background-size: cover; color:#fff; text-indent: -99999px;}
 
@@ -97,24 +97,22 @@ left:-410px; }
 /*bar부분*/
 .btn_box .prev, .btn_box .next { position: absolute; top:48%;  display: block; width: 21px; height: 32px; z-index: 80; text-indent: -9999px; background-color:transparent; background-position: center center; background-repeat: no-repeat; border:0; }
 
-.btn_box .prev {left: 300px; background-image: url(../main/prev.png); }
-.btn_box .prev:hover { background-image: url(../main/prev_blue.png); }
-.btn_box .next {right: 300px; background-image: url(../main/next.png); }
-.btn_box .next:hover { background-image: url(../main/next_blue.png); }
+.btn_box .prev {left: 300px; background-image: url(../main/icon/prev.png); }
+.btn_box .prev:hover { background-image: url(../main/icon/prev_blue.png); }
+.btn_box .next {right: 300px; background-image: url(../main/icon/next.png); }
+.btn_box .next:hover { background-image: url(../main/icon/next_blue.png); }
 
 /*barbox*/
-.barbox { width: 1200px; height: 3px; position:absolute; left: 345px; top: 50%; margin-top: -1.5px;}
-.barbox ul { width: 1200px; height: 3px; }
+.barbox { width: 1200px; height: 30px; position:absolute; left: 345px; top: 50%; margin-top: -1.5px; }
+.barbox ul { width: 1200px; height: 30px; position:relative; z-index: 80;  }
 .barbox ul li { width: 1200px; height: 3px; background-color:rgba(255,255,255,0.5);  }
-.barbox .bar { width:300px; height: 3px; background-color:#fff; float:left; display: none; transition: 0.3s; text-indent: -9999px;}
-.barbox .bar.on { display: block; }
+.barbox .bar { width:300px; height: 3px; background-color:#fff; opacity: 0; visibility: hidden; transition: 0.3s; text-indent: -9999px; position:absolute; }
+.barbox .bar:first-child.on { opacity: 1; visibility: visible; top: 0 ; }
 
-/*계열사 버튼*/
-/*
-.vs .m_btn .all { display: block; width: 150px; height: 60px; background-color: rgba(255,255,255,0.5); border: 1px solid #eee; position: absolute; bottom: 0; left: 40px; text-align: center; line-height: 60px;   color: #fff; position:absolute; left: 48%; bottom:100px; }
-.vs .m_btn .all:hover { background-color: rgba(0,108,255,0.5); border: 1px solid #eee; font-weight: 600; text-shadow: 1px 1px 1px #000; }
-*/
-
+.barbox .bar:first-child { left: 0;}
+.barbox .bar:nth-child(2) { left: 300px;}
+.barbox .bar:nth-child(3) { left: 600px;}
+.barbox .bar:last-child { left: 900px;}
 
 /*page1*/
 #pg1 { width: 1912px; height: 100vh; position: relative; overflow: hidden;}
@@ -205,16 +203,16 @@ left:-410px; }
 .ceo_box div.r_box h2 { text-align: center; color:#000; line-height: 2.0; width: 400px; height: 240px; border:1px solid #ececec; margin-top: 50px; margin-left: -40px;  padding-top: 90px; padding-bottom: 0px; background-color:#fff; box-shadow: 20px -20px 4px 4px #f67b80; font-weight: 600;}
 
 /*버튼*/
-#pg1 .tit .spin { display: block ; height: 45px; width: 45px; color:#000; position: absolute; top: 45px; right: 750px; cursor: pointer;  background-image: url("../main/spin_btn_d.png"); background-position: center; background-repeat: no-repeat; border:0; z-index: 78; text-indent:-9999px;}
+#pg1 .tit .spin { display: block ; height: 45px; width: 45px; color:#000; position: absolute; top: 45px; right: 750px; cursor: pointer;  background-image: url("../main/icon/spin_btn_d.png"); background-position: center; background-repeat: no-repeat; border:0; z-index: 78; text-indent:-9999px;}
 
 #pg1 .tit .spin.on ~ .ceo_box{ display:block; }
-#pg1 .tit .spin.on { background-image: url(../main/spin_btn_t.png);}
+#pg1 .tit .spin.on { background-image: url(../main/icon/spin_btn_t.png);}
 
 
 #pg1 .cl_btn { display: block; width: 100%; height: 60px; background-color: rgba(0,0,0,0.5); position:absolute; bottom: 0; left: 0; color:#eee; z-index: 71; cursor: pointer; font-size: 20px; color:#fff; border:0;}
 
 .ceo_box .cl_btn.on ~ .ceo_box { display: none;}
-/*pa1 버튼 작동스크립트 스타일*/
+
 
 /*page2*/
 

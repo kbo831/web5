@@ -215,6 +215,24 @@ left:-410px; }
 
 
 /*page2*/
+#pa2 { width: 100vw; position: relative; }
+.pa2 .n_box { width: 1500px; margin:0 auto; }
+.pa2 .n_box h3 { text-align: center; font-size: 50px;}
+.pa2 .card_box { width: 1500px; overflow: hidden;  }
+/*버튼 놓을 공간 100px 남김*/
+.pa2 .card_lst { width: 2500px; margin: 40px auto;  }
+.pa2 .card_lst li { width:500px ; float: left;  position:relative; }
+.pa2 .card_lst li a { display: block; width: 100%; height: 600px; }
+.pa2 .card_lst img { display: block; width: 450px; height: 300px; box-sizing: border-box; border:1px solid #dddddd; background-clip: content-box;}
+.pa2 .card_lst .txt_box { width: 400px; height: 200px;  margin: 0 auto; background-color: #ffffff; border: 2px solid #ddd; box-sizing: border-box; position:absolute; top:40%; left: 25px; }
+
+.pa2 .card_lst .txt_box span[class*=tit] { display: block; width: 100px; height: 40px; text-align: center; line-height: 40px; color:#000; margin: 25px auto; color:#fff; font-weight: 500;}
+
+.pa2 .card_lst .txt_box span.tit_r { background-color:rgb(239,21,30) ;}
+.pa2 .card_lst .txt_box span.tit_b { background-color:rgb(2,110,205) ;}
+.pa2 .card_lst .txt_box span.tit_o { background-color:rgb(255,151,0) ;}
+.pa2 .card_lst .txt_box .com { padding: 0px 20px; line-height: 2.0; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 18px; }
+.pa2 .card_lst .txt_box .date { text-align: center; padding: 20px 0;}
 
 
 /*page3*/

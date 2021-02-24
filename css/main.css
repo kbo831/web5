@@ -236,10 +236,10 @@ left:-410px; }
 .pa2 .card_lst .txt_box:hover .com { color:#0066ff; }
 
 .pa2 .btn_box01 button { display: block; width: 30px; height:55px; background-position: center center; background-repeat: no-repeat; top:45%; position: absolute; border:0; outline: 0; background-color: transparent; text-indent: -9999px; }
-.pa2 .btn_box01 .prev01 { background-image: url("../main/News_prev.png"); left:0; }
-.pa2 .btn_box01 .prev01:hover { background-image: url("../main/News_prev_b.png"); } 
-.pa2 .btn_box01 .next01 { background-image: url("../main/News_next.png"); right:0; }
-.pa2 .btn_box01 .next01:hover { background-image: url("../main/News_next_b.png"); }
+.pa2 .btn_box01 .prev01 { background-image: url("../main/icon/News_prev.png"); left:0; }
+.pa2 .btn_box01 .prev01:hover { background-image: url("../main/icon/News_prev_b.png"); } 
+.pa2 .btn_box01 .next01 { background-image: url("../main/icon/News_next.png"); right:0; }
+.pa2 .btn_box01 .next01:hover { background-image: url("../main/icon/News_next_b.png"); }
 /*page3*/
 
 .pg3 { clear:both; width: 100vw; position:relative;}

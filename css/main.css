@@ -223,7 +223,7 @@ left:-410px; }
 .pa2 .card_lst { width: 2450px; margin: 40px 60px;  }
 .pa2 .card_lst li { width:480px ; float: left;  position:relative; }
 .pa2 .card_lst li a { display: block; width: 100%; height: 600px; margin-left: 30px; }
-.pa2 .card_lst img { display: block; width: 450px; height: 300px; box-sizing: border-box; border:1px solid #dddddd; background-clip: content-box; }
+.pa2 .card_lst img { display: block; width: 450px; height: 300px; box-sizing: border-box; border:1px solid #777777; background-clip: content-box; }
 .pa2 .card_lst .txt_box { width: 400px; height: 200px;  margin: 0 auto; background-color: #ffffff; border: 2px solid #ddd; box-sizing: border-box; position:absolute; top:40%; left: 55px; }
 
 .pa2 .card_lst .txt_box span[class*=tit] { display: block; width: 100px; height: 40px; text-align: center; line-height: 40px; color:#000; margin: 25px auto; color:#fff; font-weight: 500; outline: 0; border:0;}
@@ -245,8 +245,23 @@ left:-410px; }
 .pg3 { clear:both; width: 100vw; position:relative;}
 .pg3 section {  width: 100vw; height: 100vh; background-image: url("../main/page3/bg.png"); background-repeat: no-repeat; background-position: top center; }
 .pg3 section:before { content:""; display: block; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; padding: 0; width: 100vw; height: 783px;}
-.pg3 section .tit { text-align: center; font-size: 60px; line-height: 2.5; padding-top: 20px;}
-.pg3 section .com { text-align: center; font-size: 30px; line-height: 1.5; }
+.pg3 section .tit { text-align: center; font-size: 60px; line-height: 2.5; padding-top: 20px; color:#ffffff; position:absolute; z-index: 80; top: 3%; left: 50%; margin-left: -85px; }
+.pg3 section .com { text-align: center; font-size: 30px; line-height: 1.5; color:#ffffff; position:absolute; z-index: 80; top: 20%; left: 50%; margin-left: -334px;} 
 .pg3 .c_box { width: 100%; height: 100%; position:absolute; left: 232px; top: 33%; }
-.pg3 .c_box li { width:320px; height:391px; float:left; border: 2px solid #aaa; border-radius: 50px 0 50px 0; margin: 0 20px;}
+.pg3 .c_box li { width:320px; height:391px; float:left; border: 2px solid #999999; border-radius: 50px 0 50px 0; margin: 0 20px; position: relative; background-image: transparent; background-position: center center; background-size: cover; overflow: hidden; }
+
+.pg3 .c_box li a { display: block; width:320px; height:391px; border-radius: 50px 0 50px 0;  text-align: center; transition: 0.5s; }
+.pg3 .c_box li img { display: block; width:320px; height:391px; border-radius: 50px 0 50px 0;  background-position: center center ; position:absolute; left: -1px; top: 0; opacity:0; visibility:  hidden; transition: 0.5s; z-index: 1;}
+
+.pg3 .c_box li:hover img { opacity:1; visibility:  visible; }
+
+
+.pg3 .c_box li span { display:block; width: 250px; height:80px; font-size: 40px; line-height: 80px; color:#ffffff; padding-top: 70% ; padding-left: 35px; text-align: center; transition: 0.7s; opacity: 0.7;  position:absolute; top: 0; left: 0; z-index: 80;}
+.pg3 .c_box li span:after { content:""; display: block; height: 1px; width:0px; background-color: #ffffff;  transition:0.7s; margin: 0 auto; opacity:0; visibility: hidden;}
+
+
+.pg3 .c_box li a:hover span { padding-top: 50%; font-weight: 600; font-size: 45px; opacity: 1; visibility: visible; text-shadow: -1px 0px 1px gray; }
+.pg3 .c_box li a:hover span:after { content:""; display: block; height: 1px; width: 200px; background-color: #ffffff; opacity:1; visibility: visible; margin: 0 auto;}
+
+
 /*page4*/

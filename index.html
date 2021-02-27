@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <title>CJ그룹리뉴얼포트폴리오</title>
@@ -10,11 +9,9 @@
     <script src="./js/html5shiv.min.js"></script>
     <script src="./js/device.js"></script>
     <!--fontset 설정하기-->
-
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <scrip scr="./js/slider.js"></scrip>
-
     <style>
     </style>
     <script>
@@ -22,9 +19,9 @@
             $(".r_box .op_btn ").click(function() {
                 $("header").toggleClass("active");
             });
-            $(window).scroll(function(){
-               var scTop = parseInt($(window).scrollTop()); 
-                if(scTop>=200){
+            $(window).scroll(function() {
+                var scTop = parseInt($(window).scrollTop());
+                if (scTop >= 200) {
                     $("header").addClass("on");
                 } else {
                     $("header").removeClass("on");
@@ -32,9 +29,7 @@
             });
         });
     </script>
-
 </head>
-
 <body>
     <div class="wrap">
         <header class="hd clrfx">
@@ -173,10 +168,10 @@
                     <botton class="next">다음</botton>
                 </div>
                 <ul class="u_bar clrfx">
-                        <li class="bar on">1</li>
-                        <li class="bar">2</li>
-                        <li class="bar">3</li>
-                        <li class="bar">4</li> 
+                    <li class="bar on">1</li>
+                    <li class="bar">2</li>
+                    <li class="bar">3</li>
+                    <li class="bar">4</li>
                 </ul>
                 <script>
                     $(document).ready(function() {
@@ -184,26 +179,26 @@
                             ani1();
                         }, 2950);
                         var n = $(".u_bar li").length;
-                        
+
                         function ani1() {
                             $(".vs_box").not(":animated").animate({
                                 "margin-left": "-1920px"
                             }, 700, function() {
                                 $(".vs_box li").eq(0).appendTo($(".vs_box"));
                                 $(".vs_box").css("margin-left", "0px");
-                                
+
                             });
-                            
-                           //막대기 작동입력
+
+                            //막대기 작동입력
                         }
-                     
+
                         function ani2() {
                             $(".vs_box li").eq(3).prependTo($(".vs_box"));
                             $(".vs_box").css("margin-left", "-1920px");
                             $(".vs_box").not(":animated").animate({
                                 "margin-left": "0px"
                             }, 700);
-                          
+
                             //막대기 작동입력하기  
                         }
                         $(".btn_box .prev").click(function() {
@@ -384,9 +379,10 @@
                             <button class="prev01">이전</button>
                             <button class="next01">다음</button>
                         </div>
-
                     </div>
-
+                    <script>
+                        //보류//
+                    </script>
                 </section>
             </div>
             <div id="pg3" class="pg3 clrfx">
@@ -444,25 +440,25 @@
                             </a>
                         </li>
                     </ul>
-                <script>
-                $(document).ready(function(){
-                    var wd = parseInt($(".img_box").width());
-                    
-                    $(".img_box li").mouseenter(function(){
-                       $(this).width(wd*0.44); 
-                        $(this).siblings().width(wd*0.28); 
-                    });
-                    $(".img_box li").mouseleave(function(){
-                       $(".img_box li").width(wd*0.333333); 
-                    });
-                });
-                </script>
+                    <script>
+                        $(document).ready(function() {
+                            var wd = parseInt($(".img_box").width());
+
+                            $(".img_box li").mouseenter(function() {
+                                $(this).width(wd * 0.44);
+                                $(this).siblings().width(wd * 0.28);
+                            });
+                            $(".img_box li").mouseleave(function() {
+                                $(".img_box li").width(wd * 0.333333);
+                            });
+                        });
+                    </script>
                 </section>
-               
+
             </div>
         </mian>
         <footer class="ft clrfx">
-            <div class="sel_box">
+            <div class="sel_box clrfx">
                 <ul class="sel">
                     <input type="checkbox" name="ck" id="ck1" class="ck">
                     <li class="lst1 food">
@@ -534,7 +530,6 @@
                         </ul>
                     </li>
                 </ul>
-
             </div>
             <div class="fnb_box clrfx">
                 <div class="fnb_wrap clrfx">
@@ -548,7 +543,7 @@
                         <li><a href="">인재채용</a></li>
                     </ul>
                     <ul class="ft_nav ft_nav02 clrfx">
-                        <li><a href=""><span class="bl">개인정보처리방침</span></a></li>
+                        <li><a href="">개인정보처리방침</a></li>
                         <li><a href="">이용약관</a></li>
                         <li><a href="">뉴스레터</a></li>
                         <li><a href="">공지사항</a></li>
@@ -556,17 +551,14 @@
                         <li><a href="">고객센터</a></li>
                     </ul>
                     <p class="copy">서울특별시 중구 소월로 2길 12, CJ THE CENTER | 대표이사:손경식,김홍기<br>사업자등록번호 : 104-81-26714<br>ⓒ씨제이㈜.All Rights REseved.</p>
-                    <ul class="img_box">
-                        <li><img src="./main/logo/ft_wa_mark_big.png" alt="와인증마크1"></li>
-                    </ul>
+                    <img src="./main/logo/ft_wa_mark_big.png" alt="와인증마크1" class="wa">
                 </div>
             </div>
-
         </footer>
-        <div class="to_top">
+        <a href="#" class="top">
             <img src="./main/icon/img_scroll_arrow.png" alt="위로화살표">
-            <!--  <span class="txt">top</span>-->
-        </div>
+            <span class="txt">top</span>
+        </a>
         <!--ul 앞: top  뒤: end -->
         <div class="mt_bar">
             <ul class="bar_fr">
@@ -579,7 +571,20 @@
             </ul>
             <div class="cur_page">현재위치표시</div>
         </div>
+        <!--다시하기-->
+           <script>
+            $(document).ready(function(){
+               var scTop = parseInt($(window).scrollTop()); 
+                var ht =$(window).height();
+                if(scTop>=ht){
+                    $(".top").fadeIn();
+                } else{
+                    $(".top").fadeOut();
+                }
+            });  
+        </script>
     </div>
+    
 </body>
 
 </html>

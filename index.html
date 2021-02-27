@@ -22,7 +22,14 @@
             $(".r_box .op_btn ").click(function() {
                 $("header").toggleClass("active");
             });
-
+            $(window).scroll(function(){
+               var scTop = parseInt($(window).scrollTop()); 
+                if(scTop>=200){
+                    $("header").addClass("on");
+                } else {
+                    $("header").removeClass("on");
+                }
+            });
         });
     </script>
 
@@ -118,7 +125,6 @@
         </header>
         <mian class="con clrfx" id="content">
             <figure class="vs clrfx">
-
                 <ul class="vs_box clrfx">
                     <li class="item item01">
                         <a href="" class="vs vs1">음식
@@ -127,9 +133,7 @@
                             <h2>식품 & 식품서비스</h2>
                             <h1>한식 세계화의 선두에서 글로벌 식문화를 창조합니다.</h1>
                             <p class="com">한식 세계화의 선두에서 글로벌 식문화를 창조합니다.맛있는 세상을 만드는 식품 & 식품서비스 부문은CJ의 출발점입니다.</p>
-
                         </div>
-
                     </li>
                     <li class="item item02">
                         <a href="" class="vs vs2">
@@ -140,20 +144,15 @@
                             <h1>아시아를 넘어 세계 곳곳으로 한류를 전파하며<br>
                                 즐거운 세상을 창조합니다.</h1>
                             <p class="com">아시아를 넘어 전 세계에 새로운 한류를 전파합니다. 전 세계가 우리의 문화와 콘텐츠를 주목하고 있습니다<br>미디어 콘텐츠, 영화, 음악, 공연 등 다양한 콘텐츠로 새로운 가치를 부여 아시아를 넘어 세계 곳곳으로<br> 한류의 중심에서 즐거운 세상을 창조해가고 있습니다.</p>
-
                         </div>
-
                     </li>
-
                     <li class="item item03">
                         <a href="" class="vs vs3">생명공학
-
                         </a>
                         <div class="txt_box txt03">
                             <h2>생명공학</h2>
                             <h1>최고의 기술과 경쟁력으로 생명공학의 미래를 선도합니다.</h1>
                             <p class="com">CJ제일제당 BIO 사업부문은 R&D 기반의 아미노산 및 핵산 등 제품을 최고 수준의 품질로 안전하게 제공하여<br> 전 세계인이 더 건강하고 더 나은 삶을 영위하도록 돕고 있습니다.<br></p>
-
                         </div>
                         <a href="" class="go">계열사 전체보기</a>
                     </li>
@@ -166,59 +165,68 @@
                             <h1>글로벌 유통과 물류 강자로 전 세계인의 생활을
                                 더욱 편리하게 합니다.</h1>
                             <p class="com">최초의 TV 홈쇼핑을 통해 대한민국의 쇼핑과 국내 최초의 물류 사업으로 유통의 역사를 만들어 온 CJ의 신유통 부문이<br>세계인의 라이프스타일을 빠르게 변화시키며 편리한 세상을 열어가고 있습니다. </p>
-
                         </div>
-
                     </li>
                 </ul>
                 <div class="btn_box clrfx">
                     <botton class="prev">이전</botton>
                     <botton class="next">다음</botton>
                 </div>
-
-                <div class="barbox clrfx">
-                    <ul class="u_bar">
-                        <li>
-                            <div class="bar on">1</div>
-
-                            <div class="bar">2</div>
-
-                            <div class="bar">3</div>
-
-                            <div class="bar">4</div>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="u_bar clrfx">
+                        <li class="bar on">1</li>
+                        <li class="bar">2</li>
+                        <li class="bar">3</li>
+                        <li class="bar">4</li> 
+                </ul>
                 <script>
                     $(document).ready(function() {
+                        var intv = setInterval(function() {
+                            ani1();
+                        }, 2950);
+                        var n = $(".u_bar li").length;
+                        
                         function ani1() {
                             $(".vs_box").not(":animated").animate({
                                 "margin-left": "-1920px"
                             }, 700, function() {
                                 $(".vs_box li").eq(0).appendTo($(".vs_box"));
                                 $(".vs_box").css("margin-left", "0px");
+                                
                             });
-
-
+                            
+                           //막대기 작동입력
                         }
-                        var intv = setInterval(function() {
-                            ani1();
-                        }, 2950);
-
+                     
                         function ani2() {
                             $(".vs_box li").eq(3).prependTo($(".vs_box"));
                             $(".vs_box").css("margin-left", "-1920px");
                             $(".vs_box").not(":animated").animate({
-                                "margin-left": "-1920px"
+                                "margin-left": "0px"
                             }, 700);
-
+                          
+                            //막대기 작동입력하기  
                         }
+                        $(".btn_box .prev").click(function() {
+                            clearInterval(intv);
+                            ani2();
+                            intv = setInterval(function() {
+                                ani1();
+                            }, 2950);
 
+
+                        });
+
+                        $(".btn_box .next").click(function() {
+                            clearInterval(intv);
+                            ani1();
+                            intv = setInterval(function() {
+                                ani1();
+                            }, 2950);
+
+                        });
                     });
                 </script>
-                <!--   <div class="m_btn">
-                    <a href="" class="all">계열사 전체보기</a>
-                </div>-->
+
             </figure>
             <!--after로 박스만들기-->
             <div id="pg1" class="pg1 clrfx">
@@ -437,15 +445,29 @@
                             </a>
                         </li>
                     </ul>
-
+                <script>
+                $(document).ready(function(){
+                    var wd = parseInt($(".img_box").width());
+                    
+                    $(".img_box li").mouseenter(function(){
+                       $(this).width(wd*0.44); 
+                        $(this).siblings().width(wd*0.28); 
+                    });
+                    $(".img_box li").mouseleave(function(){
+                       $(".img_box li").width(wd*0.333333); 
+                    });
+                });
+                </script>
                 </section>
+               
             </div>
         </mian>
         <footer class="ft clrfx">
             <div class="sel_box">
                 <ul class="sel">
+                    <input type="checkbox" name="ck" id="ck1" class="ck">
                     <li class="lst1 food">
-                        <span class="tit">식품 & 식품서비스</span>
+                        <label for="ck1" class="tit">식품 & 식품서비스</label>
                         <ul class="sub">
                             <li class="item1 jd">
                                 <a href="">CJ제일제당</a>
@@ -460,8 +482,9 @@
                     </li>
                 </ul>
                 <ul class="sel">
+                    <input type="checkbox" name="ck" id="ck2" class="ck">
                     <li class="lst1 life">
-                        <span class="tit">생명공학</span>
+                        <label for="ck2" class="tit">생명공학</label>
                         <ul class="sub">
                             <li class="item1 bio">
                                 <a href="">BIO사업부문</a>
@@ -473,8 +496,9 @@
                     </li>
                 </ul>
                 <ul class="sel">
+                    <input type="checkbox" name="ck" id="ck3" class="ck">
                     <li class="lst1 traffic">
-                        <span class="tit">물류 & 신유통</span>
+                        <label for="ck3" class="tit">물류 & 신유통</label>
                         <ul class="sub">
                             <li class="item1">
                                 <a href="">CJ대한통운</a>
@@ -492,8 +516,9 @@
                     </li>
                 </ul>
                 <ul class="sel">
+                    <input type="checkbox" name="ck" id="ck4" class="ck">
                     <li class="lst1 enter">
-                        <span class="tit">엔터테인먼트 & 미디어</span>
+                        <label for="ck4" class="tit">엔터테인먼트 & 미디어</label>
                         <ul class="sub">
                             <li class="item1">
                                 <a href="">CJ대한통운</a>
@@ -510,9 +535,7 @@
                         </ul>
                     </li>
                 </ul>
-                <script>
 
-                </script>
             </div>
             <div class="fnb_box clrfx">
                 <div class="fnb_wrap clrfx">
@@ -534,12 +557,12 @@
                         <li><a href="">고객센터</a></li>
                     </ul>
                     <p class="copy">서울특별시 중구 소월로 2길 12, CJ THE CENTER | 대표이사:손경식,김홍기<br>사업자등록번호 : 104-81-26714<br>ⓒ씨제이㈜.All Rights REseved.</p>
+                    <ul class="img_box">
+                        <li><img src="./main/logo/ft_wa_mark_big.png" alt="와인증마크1"></li>
+                    </ul>
                 </div>
-                <ul class="img_box">
-                    <li><img src="./main/logo/ft_wa_mark.png" alt="와인증마크1"></li>
-                </ul>
             </div>
-            
+
         </footer>
         <div class="to_top">
             <img src="./main/icon/img_scroll_arrow.png" alt="위로화살표">

@@ -118,6 +118,7 @@
             </nav>
 
         </header>
+        
         <mian class="con clrfx" id="content">
             <figure class="vs clrfx">
                 <ul class="vs_box clrfx">
@@ -168,13 +169,14 @@
                     <botton class="next">다음</botton>
                 </div>
                 <ul class="u_bar clrfx">
-                    <li class="bar on">1</li>
-                    <li class="bar">2</li>
-                    <li class="bar">3</li>
-                    <li class="bar">4</li>
+                    <li class="bar1 on"><div class="bbtn">1</div></li>
+                    <li class="bar2"><div class="bbtn">2</div></li>
+                    <li class="bar3"><div class="bbtn">3</div></li>
+                    <li class="bar4"><div class="bbtn">4</div></li>
                 </ul>
                 <script>
                     $(document).ready(function() {
+                        
                         var intv = setInterval(function() {
                             ani1();
                         }, 2950);
@@ -189,7 +191,11 @@
 
                             });
 
-                            //막대기 작동입력
+                            //막대기 작동입력 : 작동이 안됨 ㅠㅠ 
+                            $(".u_bar li").eq(0).appendTo($(".u_bar"));
+                            $(".u_bar li").removeClass("on");
+                            $(".u_bar li").eq(0).addClass("on");
+                            
                         }
 
                         function ani2() {
@@ -199,8 +205,12 @@
                                 "margin-left": "0px"
                             }, 700);
 
-                            //막대기 작동입력하기  
+                            //막대기 작동입력하기  작동안됨 ㅠㅠ
+                            $(".u_bar li").eq(3).prependTo($(".u_bar"));
+                            $(".u_bar li").removeClass("on");
+                            $(".u_bar li").eq(0).addClass("on");
                         }
+                        
                         $(".btn_box .prev").click(function() {
                             clearInterval(intv);
                             ani2();

@@ -1,0 +1,30 @@
+@charset "utf-8";
+.con { width: 100%; clear:both; }
+.con section { width: 100%; }
+.full_bn { width:100%; height:395px; background-image: url("../sub/sub02_media/bg.png"); overflow: hidden; }
+.full_bn h2{ width: 100%; height: 100%; font-size: 110px; text-align: center; line-height: 500px;  }
+
+/*스크롤 슬라이드*/
+.slide_wrap { clear:both; width: 1500px; height: 340px; position: relative; margin: 0 auto;  }
+.slide { width: 1440px; height: 320px; margin: 0 auto;  overflow: hidden;  }
+.slide button { display: block; width:75px; height:103px;  border:0; outline: 0px; position:absolute; top:55%;  z-index: 88; cursor: pointer; text-indent: -9999px;}
+.slide .pr { background-image: url("../main/icon/onester_pr_btn.png"); left: 150px; }
+.slide .nt { background-image: url("../main/icon/onester_nt_btn.png"); right: 150px; }
+.slide .slide_fr { width: 3600px; height: 320px; }
+.slide .slide_fr a { display: block; float: left; width:240px; height:320px; background-repeat: no-repeat; background-position: center center; margin-left: 5px; }
+
+.slide .slide_fr a.item01 { background-image: url("../sub/sub02_media/01.png");}
+.slide .slide_fr a.item02 { background-image: url("../sub/sub02_media/02.png");}
+.slide .slide_fr a.item03 { background-image: url("../sub/sub02_media/03.png");}
+.slide .slide_fr a.item04 { background-image: url("../sub/sub02_media/04.png");}
+.slide .slide_fr a.item05 { background-image: url("../sub/sub02_media/05.png");}
+.slide .slide_fr a.item06 { background-image: url("../sub/sub02_media/06.png");}
+.slide .slide_fr a.item07 { background-image: url("../sub/sub02_media/07.png");}
+.slide .slide_fr a.item08 { background-image: url("../sub/sub02_media/08.png");}
+.slide .slide_fr a.item09 { background-image: url("../sub/sub02_media/09.png");}
+.slide .slide_fr a.item10 { background-image: url("../sub/sub02_media/10.png");}
+.slide .slide_fr a.item11 { background-image: url("../sub/sub02_media/11.png");}
+.slide .slide_fr a.item12 { background-image: url("../sub/sub02_media/12.png");}
+.slide .slide_fr a.item13 { background-image: url("../sub/sub02_media/13.png");}
+.slide .slide_fr a.item14 { background-image: url("../sub/sub02_media/14.png");}
+

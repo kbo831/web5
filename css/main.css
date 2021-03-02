@@ -174,7 +174,7 @@ left:-410px; }
 
 /*item11큰 배경 */
 
-#pg1 .lst_box li.item11{ width: 100vw; height:850px; background-image:  url("../main/page1/pg1big_s.jpg"); position:absolute; top:0; left: 0; z-index: 3;}
+#pg1 .lst_box li.item11{ width: 100vw; height:850px; background-image:  url("../main/page1/pg1big_s.jpg"); position:absolute; top:0; left: 0; z-index: 3; text-indent: -999999px;}
 
 /*hover시 변경사항: 여기서부터*/
 #pg1 .lst_box li:hover .txt { opacity:0; visibility:hidden; }
@@ -340,4 +340,12 @@ left:-410px; }
 .top img {display: block; width: 90px; height:60px; }
 .top .txt { display: block; color:#fff; font-size: 20px; text-align: center; width: 90px; height: 32px; line-height: 27px; background-color: transparent;}
 
-.mt_bar { position:fixed; top: 50%; right:0; height:200px; margin-top: -100px;}
+.mt_bar { position:fixed; top: 50%; right:0; width: 80px; height:250px; margin-top: -100px; z-index: 999;}
+
+.mt_bar .bar_fr { clear:both; }
+.mt_bar .bar_fr:before { content:""; display: block; height: 19px; width: 30px; border:1px solid #ddd;}
+.mt_bar .bar_fr:after { content:""; display: block; height: 19px; width: 30px; border:1px solid #ddd;}
+.mt_bar .bar_fr li{ width: 100px; height:30px;  }
+.mt_bar .bar_fr button { display: block; width: 50px; height:30px; border:1px solid #ddd; outline: 0;color:#fff; size:18px;}
+.mt_bar .bar_fr  { }
+

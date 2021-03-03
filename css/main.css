@@ -6,7 +6,7 @@ clrfx:after { content:""; display: block; clear:both;}
 /*header*/
 
 .hd { width: 100vw;  height: 130px; background-color: transparent;  position: relative;  position: fixed; left: 0; top: 0; z-index: 95; transition:0.6s;}
-.logo_top { display: block; background-image: url("../main/logo/cj_logo_W.png"); width: 160px; height: 90px; background-position: center center; background-repeat: no-repeat; text-indent: -9999px; float: left; margin-left: 100px; padding-top: 40px; }
+.logo_top { display: block; background-image: url("../main/logo/cj_logo_w.png"); width: 160px; height: 90px; background-position: center center; background-repeat: no-repeat; text-indent: -9999px; float: left; margin-left: 100px; padding-top: 40px; }
 
 header.on { height: 130px; background-color: rgba(255,255,255,0.5); }
 header.on .logo_top { background-image: url("../main/logo/cj_logo_b.png");  }

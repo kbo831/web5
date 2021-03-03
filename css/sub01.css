@@ -59,7 +59,7 @@
 
 /*grid_box*/
 #pg1 { width: 100vw; clear:both; padding-top: 150px; min-height: 850px; background-image: url(../sub/sub01_live_cj/sub01_bg.png); padding-bottom: 50px;}
-.pg h2{ width: 1440px; text-align: left; font-size: 35px; line-height: 1.6; margin: 0 auto; }
+.pg h2{ width: 1440px; text-align: left; font-size: 50px; line-height: 1.6; margin: 0 auto; }
 .grid_box { width: 1440px; clear: both; margin: 50px auto; }
 .grid650 { width: 650px; height: 650px;  }
 .left { float: left; }

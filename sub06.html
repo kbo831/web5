@@ -13,7 +13,24 @@
     <link rel="stylesheet" href="./css/sub_common.css">
     <link rel="stylesheet" href="./css/sub06.css">
 </head>
-
+<script>
+  $(document).ready(function() {
+            $(window).scroll(function(){
+                var home = 0;
+                var pg1 = $("#pg1").offset().top;
+                var pg2 = $("#pg2").offset().top;
+                var pg3 = $("#pg3").offset().top;
+                               
+                var scTop = parseInt($(window).scrollTop()); 
+                var ht =$(window).height();
+                if(scTop>=ht){
+                    $("body .top").fadeIn();
+                } else{
+                    $("body .top").fadeOut();
+                }
+            });  
+        });    
+</script>
 <body>
     <div class="wrap">
         <header class="hd clrfx">
@@ -84,7 +101,7 @@
             <section class="full_bn">
                 <h2>CJ 회사소개</h2>
             </section>
-            <div class="in_wrap clrfx ">
+            <div class="in_wrap clrfx " id="pg1">
                 <h3>CJ 기업 정신</h3>
                 <div class="th_box">
                     <ul class="cj_th01 th">
@@ -120,7 +137,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="gy clrfx">
+            <div class="gy clrfx" id="pg2">
                 <h3 class="gy_tit">경영철학</h3>
                 <div class="center clrfx">
                     <ul class="gy_lst left">
@@ -234,7 +251,7 @@
                     </section>
                 </div>
             </div>
-            <div class="ceo clrfx">
+            <div class="ceo clrfx" id="pg3">
 
                 <img src="./sub/sub06_cor/bg_ceo_w_small.png" alt="경영진">
                 <div class="txt_box clrfx ">

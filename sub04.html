@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>#Live In New CJ</title>
+    <title>CJ best brand</title>
     <script src="./js/jquery.js"></script>
     <script src="./js/respond.min.js"></script>
     <script src="./js/html5shiv.min.js"></script>
@@ -11,23 +11,24 @@
     <!--fontset 설정하기-->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/sub_common.css">
-    <link rel="stylesheet" href="./css/sub01.css">
+    <link rel="stylesheet" href="./css/sub04.css">
 </head>
  <script>
         $(document).ready(function() {
-            $(window).scroll(function(){
-                var home = 0;
-                var pg1 = $("#pg1").offset().top;
-                var pg2 = $("#pg2").offset().top;
-               
-                var scTop = parseInt($(window).scrollTop()); 
-                var ht =$(window).height();
-                if(scTop>=ht){
-                    $("body .top").fadeIn();
-                } else{
-                    $("body .top").fadeOut();
+            var home = 0;
+            var pg1 = $("#pg1").offset().top;
+            var pg2 = $("#pg2").offset().top;
+            var pt3 = $("#pg3").offset().top;
+            $(window).scroll(function() {
+                var scTop = parseInt($(window).scrollTop());
+                var ht = $(window).height();
+                if (scTop >= ht) {
+                    $(".top").fadeIn();
+                } else {
+                    $(".top").fadeOut();
                 }
-            });  
+            });
+
         });
     </script>
 <body>
@@ -52,10 +53,10 @@
                         <li class="m_lst">
                             <a href="sub04.html" class="m_a">CJ Brand</a>
                             <ul class="sub">
-                                <li class="s_lst"><a href="sub04.html#pg1">Best Brand</a></li>
-                                <li class="s_lst"><a href="sub04.html#pg2">건강</a></li>
-                                <li class="s_lst"><a href="sub04.html#pg3">즐거움</a></li>
-                                <li class="s_lst"><a href="sub04.html#pg4">편리</a></li>
+                                <li class="s_lst"><a href="sub04.html">Best Brand</a></li>
+                                <li class="s_lst"><a href="sub04.html#pg1">건강</a></li>
+                                <li class="s_lst"><a href="sub04.html#pg2">즐거움</a></li>
+                                <li class="s_lst"><a href="sub04.html#pg3">편리</a></li>
                             </ul>
                         </li>
                         <li class="m_lst m_lst03">
@@ -82,23 +83,22 @@
                             </ul>
                         </li>
                         <li class="m_lst">
-                            <a href="" class="m_a">인재채용</a>
+                            <a href="sub07.html" class="m_a">인재채용</a>
                             <ul class="sub">
-                                <li class="s_lst"><a href="sub06.html#pg1">채용공고</a></li>
-                                <li class="s_lst"><a href="sub06.html#pg2">직무정보</a></li>
-                                <li class="s_lst"><a href="sub06.html#pg3">CJ 인터뷰</a></li>
-                                <li class="s_lst"><a href="sub06.html#pg4">지원자 도우미</a></li>
-                                <li class="s_lst"><a href="sub06.html#pg5">My Page</a></li>
+                                <li class="s_lst"><a href="sub07.html#pg1">채용공고</a></li>
+                                <li class="s_lst"><a href="sub07.html#pg2">직무정보</a></li>
+                                <li class="s_lst"><a href="sub07.html#pg3">CJ 인터뷰</a></li>
+                                <li class="s_lst"><a href="sub07.html#pg4">지원자 도우미</a></li>
+                                <li class="s_lst"><a href="sub07.html#pg5">My Page</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-
             </nav>
         </header>
         <div class="con clrfx">
             <section class="full_bn">
-                <h2>#Live In New CJ</h2>
+                <h2>CJ Best Brand</h2>
             </section>
             <div class="slid_wrap clrfx">
                 <ul class="slide clrfx">
@@ -128,17 +128,13 @@
                         </a>
                         <a href="" class="item12">
                         </a>
-                        <a href="" class="item13">
-                        </a>
-                        <a href="" class="item14">
-                        </a>
                     </li>
                     <button class="nt">다음</button>
                     <script>
                         $(document).ready(function() {
                             function prev() {
                                 $(".slide_fr").not(":animated").animate({
-                                    "margin-left": "-240px"
+                                    "margin-left": "-245px"
                                 }, 700, function() {
                                     $(".slide_fr>a").eq(0).appendTo($(".slide_fr"));
                                     $(".slide_fr").css("margin-left", "0px");
@@ -150,7 +146,7 @@
 
                             function next() {
                                 $(".slide_fr>a").eq(13).prependTo($(".slide_fr"));
-                                $(".slide_fr").css("margin-left", "-240px");
+                                $(".slide_fr").css("margin-left", "-245px");
                                 $(".slide_fr").not(":animated").animate({
                                     "margin-left": "0px"
                                 }, 700);
@@ -167,18 +163,19 @@
                                 next();
                             });
                         });
+
                     </script>
                 </ul>
             </div>
             <section class="pg clrfx" id="pg1">
-                <h2>CJ STORY</h2>
+                <h2>건강 CJ </h2>
                 <div class="grid_box clrfx">
                     <ul class="left grid650">
                         <li class="item">
                             <a href="" class="img">이미지
                             </a>
                             <div class="com">
-                                <p class="tit">신기술은 우리가 지킨다! CJ제일제당 IP개발팀 김은혜 님</p>
+                                <p class="tit">한식의 맛과 우수성을 세계에 알리는 글로벌 한식 브랜드!</p>
                                 <a href="" class="abt">#CJ제일제당</a>
                             </div>
                         </li>
@@ -187,53 +184,95 @@
                         <!-- <a href="" class="more"> 더보기 </a>-->
                         <ul class="clrfx">
                             <li class="item01 grid320">
-                                <a href=""> <span class="com">'호텔'숙박권 및 건강 가전 인기' CJ오쇼핑 설연휴 기간 '휴식 소비' 증가</span></a>
+                                <a href=""> <span class="com">밥보다 더 맛있는 밥, 햅쌀로 지은 맛있고 신선한 밥 - 햇반</span></a>
                             </li>
                             <li class="item02 grid320">
-                                <a href=""><span class="com">CGV, 콘솔 플레이 대관 플랫폼 '아지트엑스(AzitX)' 정식 론칭</span></a>
+                                <a href=""><span class="com">1953년부터 맛은 쌓인다. 대한민국 최초 정제 설탕 국내 최대 규모의 식품 브랜드 - 백설 </span></a>
                             </li>
                             <li class="item03 grid320">
-                                <a href=""><span class="com">CJ올리브네트웍스-LG전자 CES에서 협력 기술 선보여</span></a>
+                                <a href=""><span class="com">CJ프레시웨이 대표 PB브랜드, 1차(농/수/축산) 상품부터 가공상품, 비식재까지 모두 아우르는 대한민국 No.1 식자재 유통 브랜드입니다.- 이츠웰 </span></a>
                             </li>
                             <li class="item04 grid320">
-                                <a href=""><span class="com">꿈을 키우고 있는 청년이라면 주목! 꿈키움아카데미가 2021년 교육생을 모집합니다.</span></a>
+                                <a href=""><span class="com">푸드빌의 새로운 한식브랜드
+                                        산지 제철 식재로 만든 건강한 밥상 - 계절 밥상 </span></a>
 
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-             <section class="pg clrfx" id="pg2">
-                <h2>즐거움</h2>
+            <section class="pg clrfx" id="pg2">
+                <h2>즐거운 CJ</h2>
                 <div class="grid_box clrfx">
                     <div class="right grid650">
                         <!-- <a href="" class="more"> 더보기 </a>-->
                         <ul class="clrfx">
                             <li class="item01 grid320">
-                                <a href=""> <span class="com">'호텔'숙박권 및 건강 가전 인기' CJ오쇼핑 설연휴 기간 '휴식 소비' 증가</span></a>
+                                <a href=""> <span class="com">'즐거움엔 끝이 없다' tvN은 대한민국 전역을 비롯한 아시아 지역에 방영되고 있는
+                                        종합 엔터테인먼트 채널 - tvn </span></a>
                             </li>
                             <li class="item02 grid320">
-                                <a href=""><span class="com">CGV, 콘솔 플레이 대관 플랫폼 '아지트엑스(AzitX)' 정식 론칭</span></a>
+                                <a href=""><span class="com">Music Makes One Mnet
+                                        음악전문채널 Mnet은 음악으로 느낄 수 있는 최고의 즐거움을 선사하는
+                                        글로벌 No.1 뮤직 엔터테인먼트 플랫폼 - MWave </span></a>
                             </li>
                             <li class="item03 grid320">
-                                <a href=""><span class="com">CJ올리브네트웍스-LG전자 CES에서 협력 기술 선보여</span></a>
+                                <a href=""><span class="com">독창적인 소재의 오리지널 장르 드라마를 자체 제작, 영화와 드라마의 경계를 허물고 국내 최다 영화 방송 판권 보유 채널로 No.1 스토리테인먼트 브랜드 - OCN</span></a>
                             </li>
                             <li class="item04 grid320">
-                                <a href=""><span class="com">꿈을 키우고 있는 청년이라면 주목! 꿈키움아카데미가 2021년 교육생을 모집합니다.</span></a>
+                                <a href=""><span class="com">Mnet Asian Music Awards , 온 세계가 함께 즐기는 글로벌 음악축제! 독창적인 퍼포먼스와 음악으로 전 세계적으로 높아진 K-POP의 위상을 보여주고,
+                                        언택트 시대에 맞는 기술을 접목하여 국적, 인종, 세대를 뛰어넘어
+                                        전 세계 음악팬들이 함께 소통하고 즐길 수 있는 새로운 글로벌 음악 축제를 선도 - MAMA </span></a>
 
                             </li>
                         </ul>
                     </div>
-                     <ul class="left grid650">
+                    <ul class="left grid650">
                         <li class="item">
                             <a href="" class="img">이미지
                             </a>
                             <div class="com">
-                                <p class="tit">신기술은 우리가 지킨다! CJ제일제당 IP개발팀 김은혜 님</p>
-                                <a href="" class="abt">#CJ제일제당</a>
+                                <p class="tit">K-POP, K-드라마, K-무비 등 문화 콘텐츠와 IT, 패션, 뷰티 등 첨단·제조업까지 ‘한류의 모든 것’을 테마로 컨벤션과 콘서트를 결합한 최초의 세계 최대급 K-Culture 페스티벌 - kcon </p>
+                                <a href="" class="abt">#CJENM</a>
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="pg clrfx" id="pg3">
+                <h2>편리한 CJ</h2>
+                <div class="grid_box clrfx">
+                    <ul class="left grid650">
+                        <li class="item">
+                            <a href="" class="img">이미지
+                            </a>
+                            <div class="com">
+                                <p class="tit">"WE DESIGN LOGISTICS” - 물류의 첫 시작부터 마지막 도달지점까지,
+                                    과정의 혁신 지속, 고객에 대한 책임, 우리는 물류의 모든 과정을 세심하게 조율&amp;디자인, 물류 산업의 뉴 패러다임을 선도 - CJ 대한통운 </p>
+                                <a href="" class="abt">#CJ대한통운</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="right grid650">
+                        <!-- <a href="" class="more"> 더보기 </a>-->
+                        <ul class="clrfx">
+                            <li class="item01 grid320">
+                                <a href=""> <span class="com">트렌디 라이프스타일을 위한 모든 것, 편리하고 즐거운 쇼핑 문화, 맞춤형 쇼핑 가치를 제공하는 온라인 쇼핑 - CJ MALL</span></a>
+                            </li>
+                            <li class="item02 grid320">
+                                <a href=""><span class="com">CJ의 다양한
+                                        생활문화 서비스를 모두 즐길 수 있는
+                                        통합 라이프스타일 멤버십 서비스, CJ 라이프스타일 브랜드에서 ONE하세요! -CJ ONE </span></a>
+                            </li>
+                            <li class="item03 grid320">
+                                <a href=""><span class="com"> 국내에 최적화된 헬스&amp;뷰티 최초 스토어, 많은 이들이 건강하고 아름다워질 수 있도록 차별화된 쇼핑 가치를 창출, 건강한 아름다움과 일상 속의 새로움을 전하는 ‘라이프스타일 플랫폼’- OLIVE YOUNG </span></a>
+                            </li>
+                            <li class="item04 grid320">
+                                <a href=""><span class="com">국내 유일의 세계 100대 코스이자, 국내 골프 클럽 문화를 선도하고 있는 정통 회원제 골프 클럽 - NINE BRIDGES </span></a>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -310,6 +349,8 @@
                         </ul>
                     </li>
                 </ul>
+                <script>
+                </script>
             </div>
             <div class="fnb_box clrfx">
                 <div class="fnb_wrap clrfx">
@@ -361,6 +402,9 @@
                     $("body .top").fadeOut();
                 }
             });
+
         </script>
     </div>
-</body></html>
+</body>
+
+</html>

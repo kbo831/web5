@@ -13,7 +13,26 @@
     <link rel="stylesheet" href="./css/sub_common.css">
     <link rel="stylesheet" href="./css/sub02.css">
 </head>
-
+<script>
+    $(document).ready(function() {
+            $(window).scroll(function(){
+                var home = 0;
+                var pg1 = $("#pg1").offset().top;
+                var pg2 = $("#pg2").offset().top;
+                var pg3 = $("#pg3").offset().top;
+                var pg4 = $("#pg4").offset().top;
+               
+                var scTop = parseInt($(window).scrollTop()); 
+                var ht =$(window).height();
+                if(scTop>=ht){
+                    $("body .top").fadeIn();
+                } else{
+                    $("body .top").fadeOut();
+                }
+            });  
+        });
+    
+</script>
 <body>
     <div class="wrap clrfx">
         <header class="hd clrfx">

@@ -58,38 +58,76 @@
 
 
 /*grid_box*/
-#pg1 { width: 100vw; clear:both; padding-top: 150px; min-height: 850px; background-image: url(../sub/sub01_live_cj/sub01_bg.png); padding-bottom: 50px;}
+
 .pg h2{ width: 1440px; text-align: left; font-size: 50px; line-height: 1.6; margin: 0 auto; }
-.grid_box { width: 1440px; clear: both; margin: 50px auto; }
-.grid650 { width: 650px; height: 650px;  }
-.left { float: left; }
-.right{ float: left; margin-left: 30px; }
-.left li.item { width: 100%; height: 100%; position:relative;  }
-.left li.item a.img:after { content: "" ; display: block; width: 650px; height: 645px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; transition:0.7; }
+#pg1 { width: 100vw; clear:both; padding-top: 150px; min-height: 700px; background-image: url(../sub/sub01_live_cj/sub01_bg.png); padding-bottom: 30px;}
+#pg1 .grid_box { width: 1440px; clear: both; margin-left: 320px;}
+#pg1 .grid650 { width: 650px; height: 650px;  }
+#pg1 .left { float: left; }
+#pg1 .right{ float: left; margin-left: 10px; }
+#pg1 .left li.item { width: 100%; height: 100%; position:relative;  }
+#pg1 .left li.item a.img:after { content: "" ; display: block; width: 650px; height: 645px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; transition:0.7; }
 
 
-.left li.item a.img { display: block; background-image: url("../sub/sub01_live_cj/grid01.jpg"); width: 650px; height:645px; background-position: center center; background-repeat: no-repeat; background-size: cover; text-indent: -9999px; }
+#pg1 .left li.item a.img { display: block; background-image: url("../sub/sub01_live_cj/grid01.jpg"); width: 650px; height:645px; background-position: center center; background-repeat: no-repeat; background-size: cover; text-indent: -9999px; }
 
-.left li.item div.com { width: 650px; height:150px; padding: 30px; position:absolute; left: 0; bottom: 5px;  box-sizing: border-box; color:#fff; font-weight: 700; }
+#pg1 .left li.item div.com { width: 650px; height:150px; padding: 30px; position:absolute; left: 0; bottom: 5px;  box-sizing: border-box; color:#fff; font-weight: 700; }
 
-.left li.item p.tit {font-size: 25px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.left li.item a.abt { display: block; width: 150px; height: 30px; border: 1px solid #fff; text-align: center; line-height: 30px; color:#fff; margin-top: 20px; }
-.left li.item p.tit:hover { color:rgb(255,151,0) ; font-size: 30px; }
-.left li.item a.abt:hover { color:rgb(255,151,0) ; }
+#pg1 .left li.item p.tit {font-size: 25px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#pg1 .left li.item a.abt { display: block; width: 150px; height: 30px; border: 1px solid #fff; text-align: center; line-height: 30px; color:#fff; margin-top: 20px; }
+#pg1 .left li.item p.tit:hover { color:rgb(255,151,0) ; font-size: 30px; }
+#pg1 .left li.item a.abt:hover { color:rgb(255,151,0) ; }
 
 /*right*/
-.right a.more{ display: block; width: 150px; height: 30px; border: 1px solid #bbb; text-align: center; line-height: 30px; color:#bbb; }
-.right a.more:hover { color:rgb(255,151,0) ; }
-.grid320 { width: 320px; height: 320px; }
-.right li.grid320 { width: 325px; height: 325px; float:left; }
-.right li a:before { content: "" ; display: block; width: 320px; height: 320px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; }
-.right li a { display: block; width: 320px; height: 320px; background-position: center center; background-repeat: no-repeat; position:relative; clear:both; }
-.right li a:after { content: ""; display: block; clear:both; }
-.right li.item01 a { background-image: url("../sub/sub01_live_cj/r320_02.png");}
-.right li.item02 a { background-image: url("../sub/sub01_live_cj/r320_03.png");}
-.right li.item03 a { background-image: url("../sub/sub01_live_cj/r320_04.png");}
-.right li.item04 a { background-image: url("../sub/sub01_live_cj/r320_05.png");}
+#pg1 .right a.more{ display: block; width: 150px; height: 30px; border: 1px solid #bbb; text-align: center; line-height: 30px; color:#bbb; }
+#pg1 .right a.more:hover { color:rgb(255,151,0) ; }
+#pg1 .grid320 { width: 320px; height: 320px; }
+#pg1 .right li.grid320 { width: 325px; height: 325px; float:left; }
+#pg1 .right li a:before { content: "" ; display: block; width: 320px; height: 320px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; }
+#pg1 .right li a { display: block; width: 320px; height: 320px; background-position: center center; background-repeat: no-repeat; position:relative; clear:both; }
+#pg1 .right li a:after { content: ""; display: block; clear:both; }
+#pg1 .right li.item01 a { background-image: url("../sub/sub01_live_cj/r320_02.png");}
+#pg1 .right li.item02 a { background-image: url("../sub/sub01_live_cj/r320_03.png");}
+#pg1 .right li.item03 a { background-image: url("../sub/sub01_live_cj/r320_04.png");}
+#pg1 .right li.item04 a { background-image: url("../sub/sub01_live_cj/r320_05.png");}
 
-.right li.grid320 a .com {  display: block; width: 100%; height: 80px; line-height: 80px; box-sizing: border-box; color:#fff; font-size: 20px; text-align: center;  position:absolute; bottom: 30px; left: 0;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 10px; }
+#pg1 .right li.grid320 a .com {  display: block; width: 100%; height: 80px; line-height: 80px; box-sizing: border-box; color:#fff; font-size: 20px; text-align: center;  position:absolute; bottom: 30px; left: 0;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 10px; }
 
-.right li.grid320 a .com:hover { color:rgb(255,151,0) ; font-size: 25px; font-weight: 700; }
+#pg1 .right li.grid320 a .com:hover { color:rgb(255,151,0) ; font-size: 25px; font-weight: 700; }
+
+/*pg2 수정하기: 이미지*/
+
+#pg2 { width: 100vw; clear:both; padding-top: 150px; min-height: 850px; background-image: url(../sub/sub01_live_cj/sub01_bg.png); padding-bottom: 30px;}
+#pg2 .grid_box { width: 1440px; clear: both; margin-left: 320px;}
+#pg2 .grid650 { width: 650px; height: 650px;  }
+#pg2 .left { float: left; margin-left: 10px;}
+#pg2 .right{ float: left;  }
+#pg2 .left li.item { width: 100%; height: 100%; position:relative;  }
+#pg2 .left li.item a.img:after { content: "" ; display: block; width: 650px; height: 645px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; transition:0.7; }
+
+
+#pg2 .left li.item a.img { display: block; background-image: url("../sub/sub01_live_cj/grid01.jpg"); width: 650px; height:645px; background-position: center center; background-repeat: no-repeat; background-size: cover; text-indent: -9999px; }
+
+#pg2 .left li.item div.com { width: 650px; height:150px; padding: 30px; position:absolute; left: 0; bottom: 5px;  box-sizing: border-box; color:#fff; font-weight: 700; }
+
+#pg2 .left li.item p.tit {font-size: 25px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#pg2 .left li.item a.abt { display: block; width: 150px; height: 30px; border: 1px solid #fff; text-align: center; line-height: 30px; color:#fff; margin-top: 20px; }
+#pg2 .left li.item p.tit:hover { color:rgb(255,151,0) ; font-size: 30px; }
+#pg2 .left li.item a.abt:hover { color:rgb(255,151,0) ; }
+
+/*right*/
+#pg2 .right a.more{ display: block; width: 150px; height: 30px; border: 1px solid #bbb; text-align: center; line-height: 30px; color:#bbb; }
+#pg2 .right a.more:hover { color:rgb(255,151,0) ; }
+#pg2 .grid320 { width: 320px; height: 320px; }
+#pg2 .right li.grid320 { width: 325px; height: 325px; float:left; }
+#pg2 .right li a:before { content: "" ; display: block; width: 320px; height: 320px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; }
+#pg2 .right li a { display: block; width: 320px; height: 320px; background-position: center center; background-repeat: no-repeat; position:relative; clear:both; }
+#pg2 .right li a:after { content: ""; display: block; clear:both; }
+#pg2 .right li.item01 a { background-image: url("../sub/sub01_live_cj/r320_02.png");}
+#pg2 .right li.item02 a { background-image: url("../sub/sub01_live_cj/r320_03.png");}
+#pg2 .right li.item03 a { background-image: url("../sub/sub01_live_cj/r320_04.png");}
+#pg2 .right li.item04 a { background-image: url("../sub/sub01_live_cj/r320_05.png");}
+
+#pg2 .right li.grid320 a .com {  display: block; width: 100%; height: 80px; line-height: 80px; box-sizing: border-box; color:#fff; font-size: 20px; text-align: center;  position:absolute; bottom: 30px; left: 0;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 10px; }
+
+#pg2 .right li.grid320 a .com:hover { color:rgb(255,151,0) ; font-size: 25px; font-weight: 700; }

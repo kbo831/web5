@@ -27,6 +27,24 @@
                     $("header").removeClass("on");
                 }
             });
+                  
+            $(window).scroll(function(){
+                var home = 0;
+                var pg1 = $("#pg01").offset().top;
+                var pg2 = $("#pg02").offset().top;
+                var pt3 = $("#pg03").offset().top;
+                var pg4 = $("#pg04").offset().top;
+           
+                var scTop = parseInt($(window).scrollTop()); 
+                var ht =$(window).height();
+                if(scTop>=ht){
+                    $("body .top").fadeIn();
+                } else{
+                    $("body .top").fadeOut();
+                }
+            });  
+       
+      
         });
     </script>
 </head>
@@ -186,9 +204,12 @@
                                 $(".vs_box").css("margin-left", "0px");
 
                             });
-
-                            //막대기 작동입력 : 작동이 안됨 ㅠㅠ 
-                            
+/*
+                         //막대기
+                            $(".u_bar li").eq(0).appendTo($(".u_bar"));
+                            $(".u_bar li").removeClass("on");
+                            $(".u_bar li").eq(0).addClass("on");
+                            */
                             
                         }
 
@@ -198,9 +219,10 @@
                             $(".vs_box").not(":animated").animate({
                                 "margin-left": "0px"
                             }, 700);
-
-                            //막대기 작동입력하기  작동안됨 ㅠㅠ
-                            
+                        /*//막대기
+                            $(".u_bar li").eq(3).prependTo($(".u_bar"));
+                            $(".u_bar li").removeClass("on");
+                            $(".u_bar li").eq(0).addClass("on");*/
                         }
                         
                         $(".btn_box .prev").click(function() {
@@ -226,7 +248,7 @@
 
             </figure>
             <!--after로 박스만들기-->
-            <div id="pg1" class="pg1 clrfx">
+            <div id="pg01" class="pg1 clrfx">
                 <section class="tit">
                     <h2 class="tit_h clrfx"><span>CJ Best Brand</span></h2>
                     <button class="spin">회전</button>
@@ -324,7 +346,7 @@
                 </section>
 
             </div>
-            <div id="pg2" class="pg2 clrfx">
+            <div id="pg02" class="pg2 clrfx">
                 <section class="n_box">
                     <h3>CJ NEWS</h3>
                     <div class="card_box clrfx">
@@ -387,7 +409,7 @@
                     </script>
                 </section>
             </div>
-            <div id="pg3" class="pg3 clrfx">
+            <div id="pg03" class="pg3 clrfx">
                 <section class="clrfx">
                     <h2 class="tit">CJ&nbsp;소개</h2>
                     <p class="com">CJ는 ONLYONE 정신으로
@@ -422,7 +444,7 @@
                     </ul>
                 </section>
             </div>
-            <div id="pg4" class="pg4 clrfx">
+            <div id="pg04" class="pg4 clrfx">
                 <section class="bg_b">
                     <h2>애니메이션 페이지4</h2>
                     <ul class="img_box">
@@ -575,18 +597,7 @@
             </ul>
             <div class="cur_page">현재위치표시</div>
         </div>
-        <!--다시하기  작성하기-->
-           <script>
-            $(document).ready(function(){
-               var scTop = parseInt($(window).scrollTop()); 
-                var ht =$(window).height();
-                if(scTop>=ht){
-                    $("body .top").fadeIn();
-                } else{
-                    $("body .top").fadeOut();
-                }
-            });  
-        </script>
+          
     </div>
     
 </body>

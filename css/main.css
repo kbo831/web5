@@ -257,10 +257,10 @@ left:-410px; }
 .pg3 section .tit { text-align: center; font-size: 60px; line-height: 2.5; padding-top: 20px; color:#ffffff; position:absolute; z-index: 80; top: 3%; left: 50%; margin-left: -85px; }
 .pg3 section .com { text-align: center; font-size: 30px; line-height: 1.5; color:#ffffff; position:absolute; z-index: 80; top: 20%; left: 50%; margin-left: -334px;} 
 .pg3 .c_box { width: 100%; height: 100%; clear:both; position:absolute; left: 232px; top: 35%; }
-.pg3 .c_box li { width:320px; height:391px; float:left; border: 2px solid #999999; border-radius: 50px 0 50px 0; margin: 0 20px; position: relative; background-position: center center; background-size: cover; overflow: hidden; }
+.pg3 .c_box li { width:320px; height:391px; float:left; border: 2px solid #999999; border-radius: 50px; margin: 30px 20px; position: relative; background-position: center center; background-size: cover; overflow: hidden; }
 
-.pg3 .c_box li a { display: block; width:320px; height:391px; border-radius: 50px 0 50px 0;  text-align: center; transition: 0.5s; }
-.pg3 .c_box li img { display: block; width:320px; height:391px; border-radius: 50px 0 50px 0;  background-position: center center ; position:absolute; left: -1px; top: 0; opacity:0; visibility:  hidden; transition: 0.5s; z-index: 1;}
+.pg3 .c_box li a { display: block; width:320px; height:391px; text-align: center; transition: 0.5s; }
+.pg3 .c_box li img { display: block; width:320px; height:391px;   background-position: center center ; position:absolute; left: -1px; top: 0; opacity:0; visibility:  hidden; transition: 0.5s; z-index: 1;}
 
 .pg3 .c_box li:hover img { opacity:1; visibility:  visible; }
 

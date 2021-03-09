@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>CJ그룹리뉴얼포트폴리오</title>
@@ -27,27 +28,28 @@
                     $("header").removeClass("on");
                 }
             });
-                  
-            $(window).scroll(function(){
+
+            $(window).scroll(function() {
                 var home = 0;
                 var pg1 = $("#pg01").offset().top;
                 var pg2 = $("#pg02").offset().top;
                 var pt3 = $("#pg03").offset().top;
                 var pg4 = $("#pg04").offset().top;
-           
-                var scTop = parseInt($(window).scrollTop()); 
-                var ht =$(window).height();
-                if(scTop>=ht){
+
+                var scTop = parseInt($(window).scrollTop());
+                var ht = $(window).height();
+                if (scTop >= ht) {
                     $("body .top").fadeIn();
-                } else{
+                } else {
                     $("body .top").fadeOut();
                 }
-            });  
-       
-      
+            });
+
+
         });
     </script>
 </head>
+
 <body>
     <div class="wrap">
         <header class="hd clrfx">
@@ -58,7 +60,7 @@
                         <li class="m_lst">
                             <a href="sub01.html" class="m_a">#LIVE NEW CJ</a>
                         </li>
-                         <li class="m_lst">
+                        <li class="m_lst">
                             <a href="sub02.html" class="m_a">CJ Media</a>
                             <ul class="sub">
                                 <li class="s_lst"><a href="sub02.html#pg1">뉴스</a></li>
@@ -132,7 +134,7 @@
             </nav>
 
         </header>
-        
+
         <mian class="con clrfx" id="content">
             <figure class="vs clrfx">
                 <ul class="vs_box clrfx">
@@ -183,14 +185,22 @@
                     <botton class="next">다음</botton>
                 </div>
                 <ul class="u_bar clrfx">
-                    <li class="bar1 on"><div class="bbtn">1</div></li>
-                    <li class="bar2"><div class="bbtn">2</div></li>
-                    <li class="bar3"><div class="bbtn">3</div></li>
-                    <li class="bar4"><div class="bbtn">4</div></li>
+                    <li class="bar1 on">
+                        <div class="bbtn">1</div>
+                    </li>
+                    <li class="bar2">
+                        <div class="bbtn">2</div>
+                    </li>
+                    <li class="bar3">
+                        <div class="bbtn">3</div>
+                    </li>
+                    <li class="bar4">
+                        <div class="bbtn">4</div>
+                    </li>
                 </ul>
                 <script>
                     $(document).ready(function() {
-                        
+
                         var intv = setInterval(function() {
                             ani1();
                         }, 2950);
@@ -204,13 +214,12 @@
                                 $(".vs_box").css("margin-left", "0px");
 
                             });
-/*
-                         //막대기
+
                             $(".u_bar li").eq(0).appendTo($(".u_bar"));
                             $(".u_bar li").removeClass("on");
                             $(".u_bar li").eq(0).addClass("on");
-                            */
-                            
+
+
                         }
 
                         function ani2() {
@@ -219,12 +228,12 @@
                             $(".vs_box").not(":animated").animate({
                                 "margin-left": "0px"
                             }, 700);
-                        /*//막대기
+
                             $(".u_bar li").eq(3).prependTo($(".u_bar"));
                             $(".u_bar li").removeClass("on");
-                            $(".u_bar li").eq(0).addClass("on");*/
+                            $(".u_bar li").eq(0).addClass("on");
                         }
-                        
+
                         $(".btn_box .prev").click(function() {
                             clearInterval(intv);
                             ani2();
@@ -349,7 +358,7 @@
             <div id="pg02" class="pg2 clrfx">
                 <section class="n_box">
                     <h3>CJ NEWS</h3>
-                    <div class="card_box clrfx">
+                    <div class="card_box">
                         <ul class="card_lst clrfx">
                             <li class="clrfx">
                                 <a href="">
@@ -397,15 +406,49 @@
                                         <p class="date">2021.01.14</p>
                                     </div>
                                     <div class="cover_box"></div>
-                                </a></li>
+                                </a>
+                            </li>
+
                         </ul>
-                        <div class="btn_box01">
-                            <button class="prev01">이전</button>
-                            <button class="next01">다음</button>
-                        </div>
                     </div>
+
+                    <div class="btn_box01">
+                        <button class="prev01">이전</button>
+                        <button class="next01">다음</button>
+                    </div>
+                    <!--      </div>-->
+
                     <script>
-                        //보류//
+                        $(document).ready(function() {
+                            var wd2 = 460 + 50;
+                            var cnt = 0;
+                            var kbs = 0;
+
+                            function next_item(x) {
+                                $(".card_lst").not(":animated").animate({
+                                    "margin-left": x + "px"
+                                }, 500);
+                                console.log(wd2);
+                            }
+                            $(".btn_box01 .next01").click(function() {
+                                if (cnt < 2) {
+                                    cnt = cnt + 1;
+                                    kbs = (cnt * wd2) * -1;
+                                    next_item(kbs);
+                                } else {
+                                    alert("더 이상 게시물이 없습니다.");
+                                }
+                            });
+                            $(".btn_box01 .prev01").click(function() {
+                                if (cnt > 0) {
+                                    cnt = cnt - 1;
+                                    kbs = (cnt * wd2) * -1;
+                                    next_item(kbs);
+                                } else {
+                                    alert("현재 게시물이 첫 번째입니다.");
+                                }
+                            });
+                        });
                     </script>
                 </section>
             </div>
@@ -597,9 +640,9 @@
             </ul>
             <div class="cur_page">현재위치표시</div>
         </div>
-          
+
     </div>
-    
+
 </body>
 
 </html>

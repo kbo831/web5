@@ -106,7 +106,7 @@
 #pg2 .left li.item a.img:after { content: "" ; display: block; width: 650px; height: 645px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; transition:0.7; }
 
 
-#pg2 .left li.item a.img { display: block; background-image: url("../sub/sub01_live_cj/grid01.jpg"); width: 650px; height:645px; background-position: center center; background-repeat: no-repeat; background-size: cover; text-indent: -9999px; }
+#pg2 .left li.item a.img { display: block; background-image: url("../sub/sub01_live_cj/2_05.png"); width: 650px; height:645px; background-position: center center; background-repeat: no-repeat; background-size: cover; text-indent: -9999px; }
 
 #pg2 .left li.item div.com { width: 650px; height:150px; padding: 30px; position:absolute; left: 0; bottom: 5px;  box-sizing: border-box; color:#fff; font-weight: 700; }
 
@@ -123,10 +123,10 @@
 #pg2 .right li a:before { content: "" ; display: block; width: 320px; height: 320px; background-color: rgba(0,0,0,0.5); position:absolute; left: 0; top: 0; }
 #pg2 .right li a { display: block; width: 320px; height: 320px; background-position: center center; background-repeat: no-repeat; position:relative; clear:both; }
 #pg2 .right li a:after { content: ""; display: block; clear:both; }
-#pg2 .right li.item01 a { background-image: url("../sub/sub01_live_cj/r320_02.png");}
-#pg2 .right li.item02 a { background-image: url("../sub/sub01_live_cj/r320_03.png");}
-#pg2 .right li.item03 a { background-image: url("../sub/sub01_live_cj/r320_04.png");}
-#pg2 .right li.item04 a { background-image: url("../sub/sub01_live_cj/r320_05.png");}
+#pg2 .right li.item01 a { background-image: url("../sub/sub01_live_cj/2_01.png");}
+#pg2 .right li.item02 a { background-image: url("../sub/sub01_live_cj/2_02.png");}
+#pg2 .right li.item03 a { background-image: url("../sub/sub01_live_cj/2_03.png");}
+#pg2 .right li.item04 a { background-image: url("../sub/sub01_live_cj/2_04.png");}
 
 #pg2 .right li.grid320 a .com {  display: block; width: 100%; height: 80px; line-height: 80px; box-sizing: border-box; color:#fff; font-size: 20px; text-align: center;  position:absolute; bottom: 30px; left: 0;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 10px; }
 

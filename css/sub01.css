@@ -59,8 +59,8 @@
 
 /*grid_box*/
 
-.pg h2{ width: 1440px; text-align: left; font-size: 50px; line-height: 1.6; margin: 0 auto; }
-#pg1 { width: 100vw; clear:both; padding-top: 150px; min-height: 700px; background-image: url(../sub/sub01_live_cj/sub01_bg.png); padding-bottom: 30px;}
+.pg h2{ width: 1440px; text-align: left; font-size: 50px; line-height: 3.0; margin-left: 330px ; margin-top: -50px;  }
+#pg1 { width: 100vw; clear:both; padding-top: 150px; min-height: 950px; background-image: url(../sub/sub01_live_cj/sub01_bg.png); padding-bottom: 30px;}
 #pg1 .grid_box { width: 1440px; clear: both; margin-left: 320px;}
 #pg1 .grid650 { width: 650px; height: 650px;  }
 #pg1 .left { float: left; }
@@ -97,7 +97,8 @@
 
 /*pg2 수정하기: 이미지*/
 
-#pg2 { width: 100vw; clear:both; padding-top: 150px; min-height: 850px; background-image: url(../sub/sub01_live_cj/sub01_bg.png); padding-bottom: 30px;}
+#pg2 { width: 100vw; clear:both; min-height: 850px; background-image: url(../sub/sub01_live_cj/sub02_bg.png); padding-bottom: 30px; margin-top: -100px;}
+#pg2 h2 { display: none;}
 #pg2 .grid_box { width: 1440px; clear: both; margin-left: 320px;}
 #pg2 .grid650 { width: 650px; height: 650px;  }
 #pg2 .left { float: left; margin-left: 10px;}

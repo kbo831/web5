@@ -106,16 +106,16 @@ left:-410px; }
 
 /*bar 부분: 작동안됨 다시 고치기*/
 .u_bar { width: 1400px; height: 2px; background-color:rgba(255,255,255,0.5); position:absolute; left: 50%; top:50%; margin-top: 15px; margin-left: -700px; z-index: 80;}
-.u_bar li { width: 350px; height: 4px; position: relative; }
+.u_bar li { width: 350px; height: 4px; position: absolute; top:0px; }
 
-.u_bar li .bbtn { width: 350px; height: 4px; background-color:#fff;  opacity:0; visibility: hidden; transition: 0.5s; margin-top: -1px;   text-indent: -9999px; top: 0; } 
+.u_bar li .bbtn { width: 350px; height: 4px; background-color:#fff;  opacity:0; visibility: hidden; transition: 0.5s; margin-top: -1px;   text-indent: -9999px; } 
 .u_bar li.on .bbtn { opacity: 1; visibility: visible; }
 
 /*부모의 크가기 없으면 퍼센트로 하면 안됨 ; 픽셀로 잡아줘야함 고치기 : 픽셀로 해도 안됨 */
-.u_bar .bar1 .bbtn { left: 0;}
-.u_bar .bar2 .bbtn { left: 350px; }
-.u_bar .bar3 .bbtn { left: 700px; }
-.u_bar .bar4 .bbtn { left: 1050px; }
+.u_bar .bar1  { left: 0;}
+.u_bar .bar2  { left: 350px; }
+.u_bar .bar3  { left: 700px; }
+.u_bar .bar4  { left: 1050px; }
 
 /*page1*/
 #pg01 { width: 1912px; height:850px; position: relative; overflow: hidden; clear:both;}
@@ -221,21 +221,22 @@ left:-410px; }
 #pg02 { width: 100vw; height:850px; clear:both; background-color: #e3e1e1;  }
 .pg2 .n_box { width: 1600px; height: 850px; margin:0 auto; position:relative; clear:both;   }
 .pg2 .n_box h3 { text-align: center; font-size: 70px; padding:35px 0;}
-/*.pg2 .card_box { width: ; overflow: hidden;  }*/
+.pg2 .card_box { width:1440px; overflow: hidden; margin: 0 auto;}
 /*버튼 놓을 공간 100px 남김*/
-.pg2 .card_lst { width:1250px; margin: 40px 80px;  }
-.pg2 .card_lst li { width:250px ; float: left;  position:relative; }
+.pg2 .card_lst { width:3000px; padding-left: 50px;  }
+.pg2 .card_lst li { width: 450px ; float: left;  position:relative; margin-right:20px;  padding-right: 10px; }
 /*리스트 하나의 폭 총 480px 슬라이드양 480px */
-.pg2 .card_lst li a { display: block; width: 100%; height: 600px; margin-left: 30px; }
+.pg2 .card_lst li a { display: block; width: 100%; height: 600px;  }
 
-.pg2 .card_lst li a:before { content:""; display:block; width: 450px; height: 300px; background-color:rgba(0,0,0,0.4); background-image: url("../main/icon/bg_mainNews_hover.png"); background-position: center center; background-repeat: no-repeat; position:absolute; left: 0; top: 0;margin-left: 30px; opacity: 0; visibility: hidden; transition: 0.5s;}
+
+.pg2 .card_lst li a:before { content:""; display:block; width: 450px; height: 300px; background-color:rgba(0,0,0,0.4); background-image: url("../main/icon/bg_mainNews_hover.png"); background-position: center center; background-repeat: no-repeat; position:absolute; left: 0; top: 0; opacity: 0; visibility: hidden; transition: 0.5s;}
 
 .pg2 .card_lst li:hover a::before { visibility: visible; opacity: 1; }
-.pg2 .card_lst img { display: block; width: 450px; height: 300px; box-sizing: border-box; border:1px solid #f0f0f0; background-clip: content-box; }
+.pg2 .card_lst img { display: block; width: 400px; height: 300px; box-sizing: border-box; border:1px solid #f0f0f0; background-clip: content-box; margin-left: 20px }
 
-.pg2 .card_lst .txt_box { width: 400px; height: 250px;  margin: 0 auto; background-color:#ffffff; position:absolute; top:43%; left: 55px;  box-sizing: border-box; border:1px solid #f0f0f0; }
+.pg2 .card_lst .txt_box { width:350px; height: 230px;  margin: 0 auto; background-color:#ffffff; position:absolute; top:43%; left: 20px;  box-sizing: border-box; border:1px solid #f0f0f0; margin-left: 25px; }
 
-.pg2 .card_lst .txt_box span[class*=tit] { display: block; width: 120px; height: 35px; text-align: center; line-height: 35px; color:#000; margin: 30px auto; color:#fff; font-weight: 500; outline: 0; border:0; padding:5px 5px ;}
+.pg2 .card_lst .txt_box span[class*=tit] { display: block; width: 120px; height: 30px; text-align: center; line-height: 30px; color:#000; margin: 20px auto; color:#fff; font-weight: 500; outline: 0; border:0; padding:5px 5px ;}
 .pg2 .card_lst .txt_box span.tit_r { background-color:rgb(239,21,30) ;}
 .pg2 .card_lst .txt_box span.tit_b { background-color:rgb(2,110,205) ;}
 .pg2 .card_lst .txt_box span.tit_o { background-color:rgb(255,151,0) ;}

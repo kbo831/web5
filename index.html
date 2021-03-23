@@ -627,6 +627,13 @@
             <img src="./main/icon/img_scroll_arrow.png" alt="위로화살표">
             <span class="txt">top</span>
         </a>
+        <script>
+        $(document).ready(function(){
+           $(".top").click(function(){
+              $("body,html").not(":animated").animate({"scrollTop":"0px"},500); 
+           });
+        });
+        </script>
         <!--ul 앞: top  뒤: end -->
         <div class="mt_bar">
             <ul class="bar_fr">
